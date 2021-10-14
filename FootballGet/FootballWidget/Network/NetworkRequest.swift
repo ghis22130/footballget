@@ -22,20 +22,28 @@ protocol NetworkRequest {
     var body: Data? { get }
     var url: URL? { get }
     
-    func request() -> URLRequest?
+    func request() throws -> URLRequest
 }
 
 extension NetworkRequest {
     
-    var url: URL? {
-        guard var components = URLComponents(string: path) { return nil }
-        components.queryItems = queryItems.map({ URLQueryItem(name: $0.0, value: $0.1) })
-        
-        
+    var headers: [String: String]? {
+        return ["x-rapidapi-host": "api-football-v1.p.rapidapi.com",
+                "x-rapidapi-key": "29cf0d4388msh14415588f131838p1baf4ejsnb8758a7dec62"]
     }
     
-    func request() -> URLRequest? {
-        guard let url = url else { return nil }
+    var url: URL? {
+        guard var components = URLComponents(string: path) else { return nil }
+        components.queryItems = queryItems?.map({ URLQueryItem(name: $0.0, value: $0.1) })
+        
+        return components.url
+    }
+    
+    func request() throws -> URLRequest {
+        guard let url = url else {
+            throw NetworkError.invalidURL
+        }
+        
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         headers?.forEach({ request.setValue($1, forHTTPHeaderField: $0) })
@@ -45,7 +53,9 @@ extension NetworkRequest {
     }
 }
 
+
 final class NextMatchUpRequest: NetworkRequest {
+
     var method: HTTPMethod
     
     var path: String
@@ -55,8 +65,6 @@ final class NextMatchUpRequest: NetworkRequest {
     var headers: [String : String]?
     
     var body: Data?
-    
-    var url: URL?
     
     init(_ teamId: Int) {
         self.method = .get

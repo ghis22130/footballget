@@ -24,6 +24,7 @@
 		FF849E922718144B00D4243D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E912718144B00D4243D /* NetworkService.swift */; };
 		FF849E952718151700D4243D /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E942718151700D4243D /* NetworkRequest.swift */; };
 		FF849E972718153400D4243D /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E962718153400D4243D /* NetworkTask.swift */; };
+		FFB7801B2718643B0094211D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7801A2718643B0094211D /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		FF849E912718144B00D4243D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		FF849E942718151700D4243D /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		FF849E962718153400D4243D /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		FFB7801A2718643B0094211D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				FF849E912718144B00D4243D /* NetworkService.swift */,
 				FF849E942718151700D4243D /* NetworkRequest.swift */,
 				FF849E962718153400D4243D /* NetworkTask.swift */,
+				FFB7801A2718643B0094211D /* NetworkError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF849E4F2718112900D4243D /* ContentView.swift in Sources */,
+				FFB7801B2718643B0094211D /* NetworkError.swift in Sources */,
 				FF849E972718153400D4243D /* NetworkTask.swift in Sources */,
 				FF849E88271811B300D4243D /* FootballWidget.intentdefinition in Sources */,
 				FF849E952718151700D4243D /* NetworkRequest.swift in Sources */,
