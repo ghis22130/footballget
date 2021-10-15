@@ -59,6 +59,8 @@ struct FootballWidget: Widget {
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
     }
+    
+    
 }
 
 struct FootballWidget_Previews: PreviewProvider {

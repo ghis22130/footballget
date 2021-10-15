@@ -25,6 +25,9 @@
 		FF849E952718151700D4243D /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E942718151700D4243D /* NetworkRequest.swift */; };
 		FF849E972718153400D4243D /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E962718153400D4243D /* NetworkTask.swift */; };
 		FFB7801B2718643B0094211D /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7801A2718643B0094211D /* NetworkError.swift */; };
+		FFB780202719323D0094211D /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7801F2719323D0094211D /* Fixture.swift */; };
+		FFB78022271932970094211D /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB78021271932970094211D /* League.swift */; };
+		FFB78024271932D80094211D /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB78023271932D80094211D /* Teams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		FF849E942718151700D4243D /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		FF849E962718153400D4243D /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
 		FFB7801A2718643B0094211D /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		FFB7801F2719323D0094211D /* Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixture.swift; sourceTree = "<group>"; };
+		FFB78021271932970094211D /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		FFB78023271932D80094211D /* Teams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 		FF849E80271811B000D4243D /* FootballWidget */ = {
 			isa = PBXGroup;
 			children = (
+				FFB7801E271932310094211D /* Model */,
 				FF849E932718150A00D4243D /* Network */,
 				FF849E81271811B000D4243D /* FootballWidget.swift */,
 				FF849E83271811B000D4243D /* FootballWidget.intentdefinition */,
@@ -212,6 +219,16 @@
 				FFB7801A2718643B0094211D /* NetworkError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		FFB7801E271932310094211D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFB7801F2719323D0094211D /* Fixture.swift */,
+				FFB78021271932970094211D /* League.swift */,
+				FFB78023271932D80094211D /* Teams.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -376,12 +393,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF849E4F2718112900D4243D /* ContentView.swift in Sources */,
+				FFB78022271932970094211D /* League.swift in Sources */,
 				FFB7801B2718643B0094211D /* NetworkError.swift in Sources */,
 				FF849E972718153400D4243D /* NetworkTask.swift in Sources */,
 				FF849E88271811B300D4243D /* FootballWidget.intentdefinition in Sources */,
 				FF849E952718151700D4243D /* NetworkRequest.swift in Sources */,
+				FFB78024271932D80094211D /* Teams.swift in Sources */,
 				FF849E922718144B00D4243D /* NetworkService.swift in Sources */,
 				FF849E4D2718112900D4243D /* FootballGetApp.swift in Sources */,
+				FFB780202719323D0094211D /* Fixture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

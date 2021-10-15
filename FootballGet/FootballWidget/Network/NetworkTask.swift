@@ -28,14 +28,29 @@ extension NetworkTask {
 }
 
 final class NextMatchUpTask: NetworkTask {
-    
-    
+
     typealias Input = NextMatchUpRequest
     
     typealias Output = NextMatchUpResponseData
     
-    struct NextMatchUpResponseData: Decodable {
-        let response: Response
+    var service: NetworkService
+    
+    init(_ service: NetworkService) {
+        self.service = service
     }
     
+}
+
+extension NextMatchUpTask {
+    struct NextMatchUpResponseData: Decodable {
+        let response: [Int: NextMatchUpResponse]
+    }
+}
+
+extension NextMatchUpTask.NextMatchUpResponseData {
+    struct NextMatchUpResponse: Decodable {
+        let fixture: Fixture
+        let league: League
+        let teams: Teams
+    }
 }
