@@ -11,15 +11,23 @@ struct NextMatchUpWidgetView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("1")
-                    .font(.system(size: 12))
-                    .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
-                    .padding(.leading, 15)
                 
-                Text("Chelsea")
-                    .font(.system(size: 12))
-                    .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
-                    .padding(.leading, -5)
+                VStack(alignment: .leading) {
+                    Text("Chelsea")
+                        .font(.system(size: 12))
+                        .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
+                    
+                    HStack {
+                        Text("Rank")
+                            .font(.system(size: 10))
+                            .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
+                        
+                        Text("1")
+                            .font(.system(size: 10))
+                            .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
+                            .padding(.leading, -5)
+                    }
+                }.padding(.leading, 15)
                 
                 Spacer()
                 

@@ -11,15 +11,15 @@ import Intents
 
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationIntent())
+        SimpleEntry(date: Date(), configuration: SelectTeamIntent())
     }
 
-    func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
+    func getSnapshot(for configuration: SelectTeamIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
 
-    func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
+    func getTimeline(for configuration: SelectTeamIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
@@ -37,7 +37,7 @@ struct Provider: IntentTimelineProvider {
 
 struct SimpleEntry: TimelineEntry {
     let date: Date
-    let configuration: ConfigurationIntent
+    let configuration: SelectTeamIntent
 }
 
 struct FootballWidgetEntryView : View {
@@ -55,7 +55,7 @@ struct FootballWidget: Widget {
     let kind: String = "FootballWidget"
     
     var body: some WidgetConfiguration {
-        IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
+        IntentConfiguration(kind: kind, intent: SelectTeamIntent.self, provider: Provider()) { entry in
             FootballWidgetEntryView(entry: entry)
         }
         .configurationDisplayName("My Widget")
@@ -67,7 +67,7 @@ struct FootballWidget: Widget {
 
 struct FootballWidget_Previews: PreviewProvider {
     static var previews: some View {
-        FootballWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        FootballWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: SelectTeamIntent()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

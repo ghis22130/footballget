@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF79881A271D17E200EAA693 /* NextMatchUpEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798819271D17E200EAA693 /* NextMatchUpEntry.swift */; };
+		FF79881C271D17EC00EAA693 /* NextMatchUpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79881B271D17EC00EAA693 /* NextMatchUpProvider.swift */; };
+		FF79881E271D185E00EAA693 /* NextMatchUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79881D271D185E00EAA693 /* NextMatchUpData.swift */; };
+		FF798824271D2B5C00EAA693 /* ClubListTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798823271D2B5C00EAA693 /* ClubListTask.swift */; };
+		FF798826271D2B6800EAA693 /* NextMatchUpTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798825271D2B6800EAA693 /* NextMatchUpTask.swift */; };
+		FF798829271D2BBE00EAA693 /* NextMatchUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798828271D2BBE00EAA693 /* NextMatchUpRequest.swift */; };
+		FF79882B271D2BC500EAA693 /* ClubListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79882A271D2BC500EAA693 /* ClubListRequest.swift */; };
+		FF79882D271D2BF000EAA693 /* Leagues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79882C271D2BF000EAA693 /* Leagues.swift */; };
 		FF849E4D2718112900D4243D /* FootballGetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E4C2718112900D4243D /* FootballGetApp.swift */; };
 		FF849E4F2718112900D4243D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E4E2718112900D4243D /* ContentView.swift */; };
 		FF849E512718112F00D4243D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF849E502718112F00D4243D /* Assets.xcassets */; };
@@ -71,6 +79,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF798819271D17E200EAA693 /* NextMatchUpEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpEntry.swift; sourceTree = "<group>"; };
+		FF79881B271D17EC00EAA693 /* NextMatchUpProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpProvider.swift; sourceTree = "<group>"; };
+		FF79881D271D185E00EAA693 /* NextMatchUpData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpData.swift; sourceTree = "<group>"; };
+		FF798821271D1AB000EAA693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF798823271D2B5C00EAA693 /* ClubListTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListTask.swift; sourceTree = "<group>"; };
+		FF798825271D2B6800EAA693 /* NextMatchUpTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpTask.swift; sourceTree = "<group>"; };
+		FF798828271D2BBE00EAA693 /* NextMatchUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpRequest.swift; sourceTree = "<group>"; };
+		FF79882A271D2BC500EAA693 /* ClubListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListRequest.swift; sourceTree = "<group>"; };
+		FF79882C271D2BF000EAA693 /* Leagues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leagues.swift; sourceTree = "<group>"; };
 		FF849E492718112900D4243D /* FootballGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF849E4C2718112900D4243D /* FootballGetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGetApp.swift; sourceTree = "<group>"; };
 		FF849E4E2718112900D4243D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -132,6 +149,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF798818271D17BE00EAA693 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				FF798819271D17E200EAA693 /* NextMatchUpEntry.swift */,
+				FF79881B271D17EC00EAA693 /* NextMatchUpProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		FF798822271D2B4D00EAA693 /* NetworkTask */ = {
+			isa = PBXGroup;
+			children = (
+				FF849E962718153400D4243D /* NetworkTask.swift */,
+				FF798825271D2B6800EAA693 /* NextMatchUpTask.swift */,
+				FF798823271D2B5C00EAA693 /* ClubListTask.swift */,
+			);
+			path = NetworkTask;
+			sourceTree = "<group>";
+		};
+		FF798827271D2BB000EAA693 /* NetworkRequest */ = {
+			isa = PBXGroup;
+			children = (
+				FF849E942718151700D4243D /* NetworkRequest.swift */,
+				FF798828271D2BBE00EAA693 /* NextMatchUpRequest.swift */,
+				FF79882A271D2BC500EAA693 /* ClubListRequest.swift */,
+			);
+			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
 		FF849E402718112900D4243D = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +204,7 @@
 		FF849E4B2718112900D4243D /* FootballGet */ = {
 			isa = PBXGroup;
 			children = (
+				FF798821271D1AB000EAA693 /* Info.plist */,
 				FF849E4C2718112900D4243D /* FootballGetApp.swift */,
 				FF849E4E2718112900D4243D /* ContentView.swift */,
 				FF849E502718112F00D4243D /* Assets.xcassets */,
@@ -203,6 +250,7 @@
 		FF849E80271811B000D4243D /* FootballWidget */ = {
 			isa = PBXGroup;
 			children = (
+				FF798818271D17BE00EAA693 /* Provider */,
 				FF849E81271811B000D4243D /* FootballWidget.swift */,
 				FFB78027271936710094211D /* View */,
 				FFB7801E271932310094211D /* Model */,
@@ -217,9 +265,9 @@
 		FF849E932718150A00D4243D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FF798827271D2BB000EAA693 /* NetworkRequest */,
+				FF798822271D2B4D00EAA693 /* NetworkTask */,
 				FF849E912718144B00D4243D /* NetworkService.swift */,
-				FF849E942718151700D4243D /* NetworkRequest.swift */,
-				FF849E962718153400D4243D /* NetworkTask.swift */,
 				FFB7801A2718643B0094211D /* NetworkError.swift */,
 			);
 			path = Network;
@@ -231,6 +279,8 @@
 				FFB7801F2719323D0094211D /* Fixture.swift */,
 				FFB78021271932970094211D /* League.swift */,
 				FFB78023271932D80094211D /* Teams.swift */,
+				FF79881D271D185E00EAA693 /* NextMatchUpData.swift */,
+				FF79882C271D2BF000EAA693 /* Leagues.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -406,14 +456,22 @@
 			files = (
 				FF849E4F2718112900D4243D /* ContentView.swift in Sources */,
 				FFB78022271932970094211D /* League.swift in Sources */,
+				FF79882D271D2BF000EAA693 /* Leagues.swift in Sources */,
 				FFB780262719366C0094211D /* NextMatchUpWidgetView.swift in Sources */,
 				FFB7801B2718643B0094211D /* NetworkError.swift in Sources */,
+				FF798826271D2B6800EAA693 /* NextMatchUpTask.swift in Sources */,
 				FF849E972718153400D4243D /* NetworkTask.swift in Sources */,
 				FF849E88271811B300D4243D /* FootballWidget.intentdefinition in Sources */,
 				FF849E952718151700D4243D /* NetworkRequest.swift in Sources */,
 				FFB78024271932D80094211D /* Teams.swift in Sources */,
+				FF79882B271D2BC500EAA693 /* ClubListRequest.swift in Sources */,
+				FF79881A271D17E200EAA693 /* NextMatchUpEntry.swift in Sources */,
+				FF79881E271D185E00EAA693 /* NextMatchUpData.swift in Sources */,
+				FF798829271D2BBE00EAA693 /* NextMatchUpRequest.swift in Sources */,
 				FF849E922718144B00D4243D /* NetworkService.swift in Sources */,
+				FF79881C271D17EC00EAA693 /* NextMatchUpProvider.swift in Sources */,
 				FF849E4D2718112900D4243D /* FootballGetApp.swift in Sources */,
+				FF798824271D2B5C00EAA693 /* ClubListTask.swift in Sources */,
 				FFB780202719323D0094211D /* Fixture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +652,7 @@
 				DEVELOPMENT_TEAM = HB2J52X7V7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballGet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -625,6 +684,7 @@
 				DEVELOPMENT_TEAM = HB2J52X7V7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballGet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -745,6 +805,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HB2J52X7V7;
@@ -760,6 +821,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Dumba.FootballGet.FootballWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -772,6 +834,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HB2J52X7V7;
@@ -787,6 +850,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Dumba.FootballGet.FootballWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
