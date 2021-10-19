@@ -26,6 +26,7 @@ final class NextMatchUpProvider: IntentTimelineProvider {
     }
     
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<NextMatchUpEntry>) -> Void) {
+        print("123")
         fetchNextMatchUp(for: configuration.Club) { result in
             switch result {
             case .success(let entry):

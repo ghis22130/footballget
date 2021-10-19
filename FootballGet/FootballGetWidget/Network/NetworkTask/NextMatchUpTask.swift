@@ -23,7 +23,7 @@ final class NextMatchUpTask: NetworkTask {
 
 extension NextMatchUpTask {
     struct NextMatchUpResponse: Decodable {
-        let response: [Int: NextMatchUpResponse]
+        let response: [NextMatchUpResponseData]
     }
 }
 

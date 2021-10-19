@@ -10,7 +10,7 @@ import Foundation
 extension LeaguePram {
     var id: Int {
         switch self {
-        case .premierLeague: return 33
+        case .premierLeague: return 39
         case .ligue1: return 62
         case .bundesliga: return 78
         case .serieA: return 135
