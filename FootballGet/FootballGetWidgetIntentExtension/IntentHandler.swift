@@ -128,7 +128,7 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
 
 extension IntentHandler: ConfigurationIntentHandling {
     func provideClubOptionsCollection(for intent: ConfigurationIntent, with completion: @escaping (INObjectCollection<ClubParam>?, Error?) -> Void) {
-        print(intent.League.id)
+
         let request = ClubListRequest(intent.League.id)
         ClubListTask().perform(request).sink { result in
             switch result {

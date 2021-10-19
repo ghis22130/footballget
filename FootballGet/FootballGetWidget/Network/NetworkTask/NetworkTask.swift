@@ -29,8 +29,10 @@ extension NetworkTask {
 
 extension Publisher where Output == Data {
     func mapDecodingError<T: Decodable>(type: T.Type) -> AnyPublisher<T, Error> {
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
         
-        return decode(type: T.self, decoder: JSONDecoder())
+        return decode(type: T.self, decoder: decoder)
             .mapError { error in
                 if let error = error as? DecodingError {
                     var errorToReport = error.localizedDescription

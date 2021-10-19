@@ -53,6 +53,8 @@
 		FF1D5199271E8BA7000A8B80 /* ClubListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5164271E8776000A8B80 /* ClubListRequest.swift */; };
 		FF1D519A271E8BAD000A8B80 /* NextMatchUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5163271E8776000A8B80 /* NextMatchUpRequest.swift */; };
 		FF1D519B271E8BD4000A8B80 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5154271E8465000A8B80 /* Params.swift */; };
+		FF948101271EBE0900712469 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF948100271EBE0900712469 /* Utils.swift */; };
+		FF948102271EBF4800712469 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF948100271EBE0900712469 /* Utils.swift */; };
 		FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5159271E85C2000A8B80 /* NextMatchUpEntry.swift */; };
 		FFAE067C271E9F710057C03C /* NextMatchUpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5157271E859F000A8B80 /* NextMatchUpProvider.swift */; };
 		FFC9125C271E6DBD0078A44B /* FootballGetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9125B271E6DBD0078A44B /* FootballGetApp.swift */; };
@@ -137,6 +139,7 @@
 		FF1D5185271E8AA0000A8B80 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		FF1D5188271E8AA0000A8B80 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		FF1D518A271E8AA0000A8B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF948100271EBE0900712469 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		FFC91258271E6DBD0078A44B /* FootballGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC9125B271E6DBD0078A44B /* FootballGetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGetApp.swift; sourceTree = "<group>"; };
 		FFC9125D271E6DBD0078A44B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -204,6 +207,7 @@
 		FF1D513F271E82A5000A8B80 /* FootballGetWidget */ = {
 			isa = PBXGroup;
 			children = (
+				FF9480FF271EBDFC00712469 /* Utils */,
 				FF1D5140271E82A5000A8B80 /* FootballGetWidget.swift */,
 				FF1D5156271E8548000A8B80 /* Provider */,
 				FF1D5161271E8776000A8B80 /* Network */,
@@ -289,6 +293,14 @@
 				FF1D518A271E8AA0000A8B80 /* Info.plist */,
 			);
 			path = FootballGetWidgetIntentExtension;
+			sourceTree = "<group>";
+		};
+		FF9480FF271EBDFC00712469 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FF948100271EBE0900712469 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		FFC9124F271E6DBD0078A44B = {
@@ -550,6 +562,7 @@
 				FF1D516D271E8776000A8B80 /* NextMatchUpRequest.swift in Sources */,
 				FF1D516F271E8776000A8B80 /* ClubListRequest.swift in Sources */,
 				FF1D517D271E8814000A8B80 /* Params.swift in Sources */,
+				FF948102271EBF4800712469 /* Utils.swift in Sources */,
 				FF1D5177271E8776000A8B80 /* ClubListTask.swift in Sources */,
 				FF1D5160271E86CD000A8B80 /* NextMatchUpWidgetView.swift in Sources */,
 				FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */,
@@ -595,6 +608,7 @@
 				FF1D5155271E8465000A8B80 /* Params.swift in Sources */,
 				FF1D5152271E83FB000A8B80 /* Models.swift in Sources */,
 				FF1D5174271E8776000A8B80 /* NetworkTask.swift in Sources */,
+				FF948101271EBE0900712469 /* Utils.swift in Sources */,
 				FF1D5178271E8776000A8B80 /* NetworkService.swift in Sources */,
 				FF1D515F271E86A0000A8B80 /* NextMatchUpWidgetView.swift in Sources */,
 				FF1D515D271E8670000A8B80 /* FotballGetWidgetEntryView.swift in Sources */,

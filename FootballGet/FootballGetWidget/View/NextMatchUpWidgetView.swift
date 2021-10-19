@@ -55,7 +55,7 @@ struct NextMatchUpWidgetView: View {
                     .font(.system(size: 12))
                     .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
             }.padding(.top, -5)
-            Text("2021-10-16 SAT")
+            Text(data.gameDate.toString())
                 .font(.system(size: 12))
                 .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
         }

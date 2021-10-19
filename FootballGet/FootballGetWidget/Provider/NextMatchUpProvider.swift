@@ -10,7 +10,7 @@ import Foundation
 import WidgetKit
 
 final class NextMatchUpProvider: IntentTimelineProvider {
-        
+    
     typealias Entry = NextMatchUpEntry
     
     typealias Intent = ConfigurationIntent
@@ -26,7 +26,6 @@ final class NextMatchUpProvider: IntentTimelineProvider {
     }
     
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<NextMatchUpEntry>) -> Void) {
-        print("123")
         fetchNextMatchUp(for: configuration.Club) { result in
             switch result {
             case .success(let entry):
@@ -40,13 +39,25 @@ final class NextMatchUpProvider: IntentTimelineProvider {
         }
     }
     
-    private func fetchNextMatchUp(for param : ClubParam?, completion: @escaping (Result<Entry?, Error>) -> ()){
-    
-    }
-    
-    private func distributeTeam(id: String, teams: Clubs) -> (Club, Club) {
-        let id = Int(id) ?? -1
+    private func fetchNextMatchUp(for param : ClubParam?, completion: @escaping (Result<Entry?, Error>) -> ()) {
+        guard let param = param, let id = param.identifier else { return }
         
-        return teams.home.id == id ? (teams.home, teams.away) : (teams.away, teams.home)
+        let request = NextMatchUpRequest(id)
+        
+        NextMatchUpTask().perform(request).sink { result in
+            switch result {
+            case .failure(let error): print(error)
+            case .finished: return
+            }
+            
+        } receiveValue: { data in
+            guard let firstData = data.response.first else { return }
+            let entry = NextMatchUpEntry(date: Date(), nextMathUp: NextMathUpData(selected: id,
+                                                                                  fixture: firstData.fixture,
+                                                                                  clubs: firstData.teams,
+                                                                                  league: firstData.league))
+            completion(.success(entry))
+        }.store(in: &cancelBag)
+
     }
 }

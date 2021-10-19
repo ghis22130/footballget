@@ -14,15 +14,16 @@ final class NextMatchUpRequest: NetworkRequest {
     var path: String
     
     var queryItems: [String : String]?
-    
-    var headers: [String : String]?
-    
+        
     var body: Data?
     
-    init(_ teamId: Int) {
+    init(_ teamId: String) {
         self.method = .get
         self.path = "fixtures"
-        self.queryItems = ["season": "2021", "team": "\(teamId)", "next": "1"]
+        self.queryItems = ["season": "2021",
+                           "team": teamId,
+                           "next": "1",
+                           "timezone": "Asia/seoul"]
     }
     
 }
