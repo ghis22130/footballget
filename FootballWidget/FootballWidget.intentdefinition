@@ -33,7 +33,7 @@
 					<key>INEnumValueIndex</key>
 					<integer>1</integer>
 					<key>INEnumValueName</key>
-					<string>value</string>
+					<string>premierLeague</string>
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
@@ -43,7 +43,7 @@
 					<key>INEnumValueIndex</key>
 					<integer>2</integer>
 					<key>INEnumValueName</key>
-					<string>value1</string>
+					<string>ligue1</string>
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
@@ -53,7 +53,7 @@
 					<key>INEnumValueIndex</key>
 					<integer>3</integer>
 					<key>INEnumValueName</key>
-					<string>value2</string>
+					<string>bundesliga</string>
 				</dict>
 				<dict>
 					<key>INEnumValueDisplayName</key>
@@ -63,7 +63,17 @@
 					<key>INEnumValueIndex</key>
 					<integer>4</integer>
 					<key>INEnumValueName</key>
-					<string>value3</string>
+					<string>serieA</string>
+				</dict>
+				<dict>
+					<key>INEnumValueDisplayName</key>
+					<string>LA LIGA</string>
+					<key>INEnumValueDisplayNameID</key>
+					<string>RKiJNN</string>
+					<key>INEnumValueIndex</key>
+					<integer>5</integer>
+					<key>INEnumValueName</key>
+					<string>laliga</string>
 				</dict>
 			</array>
 		</dict>
@@ -190,15 +200,15 @@
 					<key>INIntentParameterConfigurable</key>
 					<true/>
 					<key>INIntentParameterDisplayName</key>
-					<string>Team</string>
+					<string>Club</string>
 					<key>INIntentParameterDisplayNameID</key>
 					<string>XPZHxD</string>
 					<key>INIntentParameterDisplayPriority</key>
 					<integer>2</integer>
 					<key>INIntentParameterName</key>
-					<string>Team</string>
+					<string>Club</string>
 					<key>INIntentParameterObjectType</key>
-					<string>TeamParam</string>
+					<string>ClubParam</string>
 					<key>INIntentParameterObjectTypeNamespace</key>
 					<string>88xZPY</string>
 					<key>INIntentParameterPromptDialogs</key>
@@ -254,13 +264,13 @@
 	<array>
 		<dict>
 			<key>INTypeDisplayName</key>
-			<string>Team Param</string>
+			<string>Club Param</string>
 			<key>INTypeDisplayNameID</key>
 			<string>cQFsCo</string>
 			<key>INTypeLastPropertyTag</key>
 			<integer>100</integer>
 			<key>INTypeName</key>
-			<string>TeamParam</string>
+			<string>ClubParam</string>
 			<key>INTypeProperties</key>
 			<array>
 				<dict>

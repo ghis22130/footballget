@@ -15,7 +15,7 @@ final class ClubListTask: NetworkTask {
     
     var service: NetworkService
     
-    init(_ service: NetworkService) {
+    init(_ service: NetworkService = DefaultNetworkService()) {
         self.service = service
     }
 }

@@ -15,6 +15,43 @@
 		FF798829271D2BBE00EAA693 /* NextMatchUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798828271D2BBE00EAA693 /* NextMatchUpRequest.swift */; };
 		FF79882B271D2BC500EAA693 /* ClubListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79882A271D2BC500EAA693 /* ClubListRequest.swift */; };
 		FF79882D271D2BF000EAA693 /* Leagues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79882C271D2BF000EAA693 /* Leagues.swift */; };
+		FF798835271D356D00EAA693 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF798834271D356D00EAA693 /* Intents.framework */; };
+		FF798838271D356D00EAA693 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798837271D356D00EAA693 /* IntentHandler.swift */; };
+		FF798840271D356D00EAA693 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF79883F271D356D00EAA693 /* IntentsUI.framework */; };
+		FF798843271D356D00EAA693 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798842271D356D00EAA693 /* IntentViewController.swift */; };
+		FF798846271D356D00EAA693 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF798844271D356D00EAA693 /* MainInterface.storyboard */; };
+		FF79884A271D356D00EAA693 /* FootballWidgetIntentExtensionUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FF79883E271D356D00EAA693 /* FootballWidgetIntentExtensionUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FF79884D271D356D00EAA693 /* FootballWidgetIntentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FF798833271D356D00EAA693 /* FootballWidgetIntentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FF798854271D358700EAA693 /* FootballWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FF849E83271811B000D4243D /* FootballWidget.intentdefinition */; };
+		FF798857271D35C400EAA693 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798856271D35C400EAA693 /* Utils.swift */; };
+		FF798858271D365400EAA693 /* ClubListTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798823271D2B5C00EAA693 /* ClubListTask.swift */; };
+		FF798859271D365500EAA693 /* ClubListTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798823271D2B5C00EAA693 /* ClubListTask.swift */; };
+		FF79885A271D365800EAA693 /* NextMatchUpTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798825271D2B6800EAA693 /* NextMatchUpTask.swift */; };
+		FF79885B271D365800EAA693 /* NextMatchUpTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798825271D2B6800EAA693 /* NextMatchUpTask.swift */; };
+		FF79885C271D365B00EAA693 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E962718153400D4243D /* NetworkTask.swift */; };
+		FF79885D271D365B00EAA693 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E962718153400D4243D /* NetworkTask.swift */; };
+		FF79885E271D366200EAA693 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E942718151700D4243D /* NetworkRequest.swift */; };
+		FF79885F271D366200EAA693 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E942718151700D4243D /* NetworkRequest.swift */; };
+		FF798860271D366600EAA693 /* NextMatchUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798828271D2BBE00EAA693 /* NextMatchUpRequest.swift */; };
+		FF798861271D366700EAA693 /* NextMatchUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798828271D2BBE00EAA693 /* NextMatchUpRequest.swift */; };
+		FF798862271D366900EAA693 /* ClubListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79882A271D2BC500EAA693 /* ClubListRequest.swift */; };
+		FF798863271D366A00EAA693 /* ClubListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79882A271D2BC500EAA693 /* ClubListRequest.swift */; };
+		FF798864271D367B00EAA693 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E912718144B00D4243D /* NetworkService.swift */; };
+		FF798865271D367C00EAA693 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E912718144B00D4243D /* NetworkService.swift */; };
+		FF798866271D369000EAA693 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7801A2718643B0094211D /* NetworkError.swift */; };
+		FF798867271D369000EAA693 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7801A2718643B0094211D /* NetworkError.swift */; };
+		FF798868271D36A500EAA693 /* NextMatchUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79881D271D185E00EAA693 /* NextMatchUpData.swift */; };
+		FF798869271D36A500EAA693 /* Leagues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79882C271D2BF000EAA693 /* Leagues.swift */; };
+		FF79886A271D36A500EAA693 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7801F2719323D0094211D /* Fixture.swift */; };
+		FF79886B271D36A500EAA693 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB78023271932D80094211D /* Teams.swift */; };
+		FF79886C271D36A500EAA693 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB78021271932970094211D /* League.swift */; };
+		FF798872271D36F000EAA693 /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB78023271932D80094211D /* Teams.swift */; };
+		FF798873271D36F200EAA693 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB78021271932970094211D /* League.swift */; };
+		FF798875271D36F600EAA693 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7801F2719323D0094211D /* Fixture.swift */; };
+		FF798876271D36F800EAA693 /* Leagues.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79882C271D2BF000EAA693 /* Leagues.swift */; };
+		FF798877271D36FB00EAA693 /* NextMatchUpData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79881D271D185E00EAA693 /* NextMatchUpData.swift */; };
+		FF798878271D397800EAA693 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798856271D35C400EAA693 /* Utils.swift */; };
+		FF798879271D397800EAA693 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798856271D35C400EAA693 /* Utils.swift */; };
 		FF849E4D2718112900D4243D /* FootballGetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E4C2718112900D4243D /* FootballGetApp.swift */; };
 		FF849E4F2718112900D4243D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF849E4E2718112900D4243D /* ContentView.swift */; };
 		FF849E512718112F00D4243D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF849E502718112F00D4243D /* Assets.xcassets */; };
@@ -38,9 +75,25 @@
 		FFB78024271932D80094211D /* Teams.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB78023271932D80094211D /* Teams.swift */; };
 		FFB780262719366C0094211D /* NextMatchUpWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB780252719366C0094211D /* NextMatchUpWidgetView.swift */; };
 		FFB780292719386F0094211D /* NextMatchUpWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB780252719366C0094211D /* NextMatchUpWidgetView.swift */; };
+		FFC9120F271D4DBD0078A44B /* NextMatchUpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF79881B271D17EC00EAA693 /* NextMatchUpProvider.swift */; };
+		FFC91210271D4DCF0078A44B /* NextMatchUpEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF798819271D17E200EAA693 /* NextMatchUpEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		FF798848271D356D00EAA693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF849E412718112900D4243D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF79883D271D356D00EAA693;
+			remoteInfo = FootballWidgetIntentExtensionUI;
+		};
+		FF79884B271D356D00EAA693 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF849E412718112900D4243D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF798832271D356D00EAA693;
+			remoteInfo = FootballWidgetIntentExtension;
+		};
 		FF849E5A2718112F00D4243D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FF849E412718112900D4243D /* Project object */;
@@ -72,6 +125,8 @@
 			dstSubfolderSpec = 13;
 			files = (
 				FF849E8B271811B300D4243D /* FootballWidgetExtension.appex in Embed App Extensions */,
+				FF79884D271D356D00EAA693 /* FootballWidgetIntentExtension.appex in Embed App Extensions */,
+				FF79884A271D356D00EAA693 /* FootballWidgetIntentExtensionUI.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,6 +143,16 @@
 		FF798828271D2BBE00EAA693 /* NextMatchUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpRequest.swift; sourceTree = "<group>"; };
 		FF79882A271D2BC500EAA693 /* ClubListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubListRequest.swift; sourceTree = "<group>"; };
 		FF79882C271D2BF000EAA693 /* Leagues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leagues.swift; sourceTree = "<group>"; };
+		FF798833271D356D00EAA693 /* FootballWidgetIntentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FootballWidgetIntentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF798834271D356D00EAA693 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		FF798837271D356D00EAA693 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		FF798839271D356D00EAA693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF79883E271D356D00EAA693 /* FootballWidgetIntentExtensionUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FootballWidgetIntentExtensionUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF79883F271D356D00EAA693 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		FF798842271D356D00EAA693 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		FF798845271D356D00EAA693 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FF798847271D356D00EAA693 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF798856271D35C400EAA693 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		FF849E492718112900D4243D /* FootballGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF849E4C2718112900D4243D /* FootballGetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGetApp.swift; sourceTree = "<group>"; };
 		FF849E4E2718112900D4243D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +181,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF798830271D356D00EAA693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF798835271D356D00EAA693 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF79883B271D356D00EAA693 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF798840271D356D00EAA693 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF849E462718112900D4243D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,6 +259,33 @@
 			path = NetworkRequest;
 			sourceTree = "<group>";
 		};
+		FF798836271D356D00EAA693 /* FootballWidgetIntentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FF798837271D356D00EAA693 /* IntentHandler.swift */,
+				FF798839271D356D00EAA693 /* Info.plist */,
+			);
+			path = FootballWidgetIntentExtension;
+			sourceTree = "<group>";
+		};
+		FF798841271D356D00EAA693 /* FootballWidgetIntentExtensionUI */ = {
+			isa = PBXGroup;
+			children = (
+				FF798842271D356D00EAA693 /* IntentViewController.swift */,
+				FF798844271D356D00EAA693 /* MainInterface.storyboard */,
+				FF798847271D356D00EAA693 /* Info.plist */,
+			);
+			path = FootballWidgetIntentExtensionUI;
+			sourceTree = "<group>";
+		};
+		FF798855271D35BA00EAA693 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				FF798856271D35C400EAA693 /* Utils.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		FF849E402718112900D4243D = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +293,8 @@
 				FF849E5C2718112F00D4243D /* FootballGetTests */,
 				FF849E662718112F00D4243D /* FootballGetUITests */,
 				FF849E80271811B000D4243D /* FootballWidget */,
+				FF798836271D356D00EAA693 /* FootballWidgetIntentExtension */,
+				FF798841271D356D00EAA693 /* FootballWidgetIntentExtensionUI */,
 				FF849E7B271811B000D4243D /* Frameworks */,
 				FF849E4A2718112900D4243D /* Products */,
 			);
@@ -197,6 +307,8 @@
 				FF849E592718112F00D4243D /* FootballGetTests.xctest */,
 				FF849E632718112F00D4243D /* FootballGetUITests.xctest */,
 				FF849E7A271811AF00D4243D /* FootballWidgetExtension.appex */,
+				FF798833271D356D00EAA693 /* FootballWidgetIntentExtension.appex */,
+				FF79883E271D356D00EAA693 /* FootballWidgetIntentExtensionUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +355,8 @@
 			children = (
 				FF849E7C271811B000D4243D /* WidgetKit.framework */,
 				FF849E7E271811B000D4243D /* SwiftUI.framework */,
+				FF798834271D356D00EAA693 /* Intents.framework */,
+				FF79883F271D356D00EAA693 /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -250,6 +364,7 @@
 		FF849E80271811B000D4243D /* FootballWidget */ = {
 			isa = PBXGroup;
 			children = (
+				FF798855271D35BA00EAA693 /* Shared */,
 				FF798818271D17BE00EAA693 /* Provider */,
 				FF849E81271811B000D4243D /* FootballWidget.swift */,
 				FFB78027271936710094211D /* View */,
@@ -296,6 +411,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF798832271D356D00EAA693 /* FootballWidgetIntentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF798851271D356D00EAA693 /* Build configuration list for PBXNativeTarget "FootballWidgetIntentExtension" */;
+			buildPhases = (
+				FF79882F271D356D00EAA693 /* Sources */,
+				FF798830271D356D00EAA693 /* Frameworks */,
+				FF798831271D356D00EAA693 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FootballWidgetIntentExtension;
+			productName = FootballWidgetIntentExtension;
+			productReference = FF798833271D356D00EAA693 /* FootballWidgetIntentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		FF79883D271D356D00EAA693 /* FootballWidgetIntentExtensionUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF79884E271D356D00EAA693 /* Build configuration list for PBXNativeTarget "FootballWidgetIntentExtensionUI" */;
+			buildPhases = (
+				FF79883A271D356D00EAA693 /* Sources */,
+				FF79883B271D356D00EAA693 /* Frameworks */,
+				FF79883C271D356D00EAA693 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FootballWidgetIntentExtensionUI;
+			productName = FootballWidgetIntentExtensionUI;
+			productReference = FF79883E271D356D00EAA693 /* FootballWidgetIntentExtensionUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FF849E482718112900D4243D /* FootballGet */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF849E6D2718112F00D4243D /* Build configuration list for PBXNativeTarget "FootballGet" */;
@@ -309,6 +458,8 @@
 			);
 			dependencies = (
 				FF849E8A271811B300D4243D /* PBXTargetDependency */,
+				FF798849271D356D00EAA693 /* PBXTargetDependency */,
+				FF79884C271D356D00EAA693 /* PBXTargetDependency */,
 			);
 			name = FootballGet;
 			productName = FootballGet;
@@ -378,6 +529,12 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					FF798832271D356D00EAA693 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					FF79883D271D356D00EAA693 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					FF849E482718112900D4243D = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -411,11 +568,28 @@
 				FF849E582718112F00D4243D /* FootballGetTests */,
 				FF849E622718112F00D4243D /* FootballGetUITests */,
 				FF849E79271811AF00D4243D /* FootballWidgetExtension */,
+				FF798832271D356D00EAA693 /* FootballWidgetIntentExtension */,
+				FF79883D271D356D00EAA693 /* FootballWidgetIntentExtensionUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF798831271D356D00EAA693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF79883C271D356D00EAA693 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF798846271D356D00EAA693 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF849E472718112900D4243D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,6 +624,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FF79882F271D356D00EAA693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF798875271D36F600EAA693 /* Fixture.swift in Sources */,
+				FF798861271D366700EAA693 /* NextMatchUpRequest.swift in Sources */,
+				FF79885B271D365800EAA693 /* NextMatchUpTask.swift in Sources */,
+				FF79885D271D365B00EAA693 /* NetworkTask.swift in Sources */,
+				FF798863271D366A00EAA693 /* ClubListRequest.swift in Sources */,
+				FF798865271D367C00EAA693 /* NetworkService.swift in Sources */,
+				FF798872271D36F000EAA693 /* Teams.swift in Sources */,
+				FF798879271D397800EAA693 /* Utils.swift in Sources */,
+				FF798838271D356D00EAA693 /* IntentHandler.swift in Sources */,
+				FF798859271D365500EAA693 /* ClubListTask.swift in Sources */,
+				FF798877271D36FB00EAA693 /* NextMatchUpData.swift in Sources */,
+				FF79885F271D366200EAA693 /* NetworkRequest.swift in Sources */,
+				FF798876271D36F800EAA693 /* Leagues.swift in Sources */,
+				FF798854271D358700EAA693 /* FootballWidget.intentdefinition in Sources */,
+				FF798873271D36F200EAA693 /* League.swift in Sources */,
+				FF798867271D369000EAA693 /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF79883A271D356D00EAA693 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF798843271D356D00EAA693 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF849E452718112900D4243D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,6 +674,7 @@
 				FF79881E271D185E00EAA693 /* NextMatchUpData.swift in Sources */,
 				FF798829271D2BBE00EAA693 /* NextMatchUpRequest.swift in Sources */,
 				FF849E922718144B00D4243D /* NetworkService.swift in Sources */,
+				FF798857271D35C400EAA693 /* Utils.swift in Sources */,
 				FF79881C271D17EC00EAA693 /* NextMatchUpProvider.swift in Sources */,
 				FF849E4D2718112900D4243D /* FootballGetApp.swift in Sources */,
 				FF798824271D2B5C00EAA693 /* ClubListTask.swift in Sources */,
@@ -497,15 +703,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF798864271D367B00EAA693 /* NetworkService.swift in Sources */,
+				FF798862271D366900EAA693 /* ClubListRequest.swift in Sources */,
+				FF79885E271D366200EAA693 /* NetworkRequest.swift in Sources */,
+				FF798868271D36A500EAA693 /* NextMatchUpData.swift in Sources */,
+				FF79885A271D365800EAA693 /* NextMatchUpTask.swift in Sources */,
+				FF79885C271D365B00EAA693 /* NetworkTask.swift in Sources */,
+				FF79886B271D36A500EAA693 /* Teams.swift in Sources */,
 				FF849E82271811B000D4243D /* FootballWidget.swift in Sources */,
 				FFB780292719386F0094211D /* NextMatchUpWidgetView.swift in Sources */,
+				FF798878271D397800EAA693 /* Utils.swift in Sources */,
+				FF798860271D366600EAA693 /* NextMatchUpRequest.swift in Sources */,
+				FFC91210271D4DCF0078A44B /* NextMatchUpEntry.swift in Sources */,
+				FF79886C271D36A500EAA693 /* League.swift in Sources */,
+				FF798858271D365400EAA693 /* ClubListTask.swift in Sources */,
+				FF798866271D369000EAA693 /* NetworkError.swift in Sources */,
+				FFC9120F271D4DBD0078A44B /* NextMatchUpProvider.swift in Sources */,
+				FF79886A271D36A500EAA693 /* Fixture.swift in Sources */,
 				FF849E87271811B300D4243D /* FootballWidget.intentdefinition in Sources */,
+				FF798869271D36A500EAA693 /* Leagues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FF798849271D356D00EAA693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF79883D271D356D00EAA693 /* FootballWidgetIntentExtensionUI */;
+			targetProxy = FF798848271D356D00EAA693 /* PBXContainerItemProxy */;
+		};
+		FF79884C271D356D00EAA693 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF798832271D356D00EAA693 /* FootballWidgetIntentExtension */;
+			targetProxy = FF79884B271D356D00EAA693 /* PBXContainerItemProxy */;
+		};
 		FF849E5B2718112F00D4243D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = FF849E482718112900D4243D /* FootballGet */;
@@ -523,7 +755,118 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		FF798844271D356D00EAA693 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF798845271D356D00EAA693 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		FF79884F271D356D00EAA693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB2J52X7V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballWidgetIntentExtensionUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FootballWidgetIntentExtensionUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dumba.FootballGet.FootballWidgetIntentExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF798850271D356D00EAA693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB2J52X7V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballWidgetIntentExtensionUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FootballWidgetIntentExtensionUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dumba.FootballGet.FootballWidgetIntentExtensionUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF798852271D356D00EAA693 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB2J52X7V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballWidgetIntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FootballWidgetIntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dumba.FootballGet.FootballWidgetIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF798853271D356D00EAA693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HB2J52X7V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FootballWidgetIntentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FootballWidgetIntentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dumba.FootballGet.FootballWidgetIntentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FF849E6B2718112F00D4243D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -861,6 +1204,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF79884E271D356D00EAA693 /* Build configuration list for PBXNativeTarget "FootballWidgetIntentExtensionUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF79884F271D356D00EAA693 /* Debug */,
+				FF798850271D356D00EAA693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF798851271D356D00EAA693 /* Build configuration list for PBXNativeTarget "FootballWidgetIntentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF798852271D356D00EAA693 /* Debug */,
+				FF798853271D356D00EAA693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FF849E442718112900D4243D /* Build configuration list for PBXProject "FootballGet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

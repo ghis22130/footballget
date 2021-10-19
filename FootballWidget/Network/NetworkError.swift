@@ -11,5 +11,7 @@ enum NetworkError: Error {
     case invalidURL
     case badRequest
     case unexpectedResponse
-    case decodingError    
+    case decodingError(String)
+    case unexpectedError
+    case httpCode(Int)
 }

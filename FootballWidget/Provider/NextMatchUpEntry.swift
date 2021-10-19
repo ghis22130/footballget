@@ -12,3 +12,8 @@ struct NextMatchUpEntry: TimelineEntry {
     var date: Date = Date()
     let nextMathUp: NextMathUpData
 }
+
+
+extension NextMatchUpEntry {
+    static let stub = NextMatchUpEntry(date: Date(), nextMathUp: NextMathUpData.stub)
+}

@@ -16,6 +16,7 @@ enum HTTPMethod: String {
 
 protocol NetworkRequest {
     var method: HTTPMethod { get }
+    var base: String { get }
     var path: String { get }
     var queryItems: [String: String]? { get }
     var headers: [String: String]? { get }
@@ -27,13 +28,17 @@ protocol NetworkRequest {
 
 extension NetworkRequest {
     
+    var base: String {
+        "https://api-football-v1.p.rapidapi.com/v3/"
+    }
+    
     var headers: [String: String]? {
         return ["x-rapidapi-host": "api-football-v1.p.rapidapi.com",
                 "x-rapidapi-key": "29cf0d4388msh14415588f131838p1baf4ejsnb8758a7dec62"]
     }
     
     var url: URL? {
-        guard var components = URLComponents(string: path) else { return nil }
+        guard var components = URLComponents(string: base + path) else { return nil }
         components.queryItems = queryItems?.map({ URLQueryItem(name: $0.0, value: $0.1) })
         
         return components.url
@@ -46,7 +51,7 @@ extension NetworkRequest {
         
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
-        headers?.forEach({ request.setValue($1, forHTTPHeaderField: $0) })
+        request.allHTTPHeaderFields = headers
         request.httpBody = body
         
         return request

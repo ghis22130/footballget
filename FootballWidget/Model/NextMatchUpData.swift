@@ -15,3 +15,12 @@ struct NextMathUpData {
     let otherClubLogo: String
     let gameDate: Date
 }
+
+extension NextMathUpData {
+    init(owner: Team, other: Team, date: Date) {
+        self.init(ownerClubName: owner.name, rank: 1, ownerClubLogo: owner.logo, otherClubName: other.name, otherClubLogo: other.logo, gameDate: date)
+    }
+}
+extension NextMathUpData {
+    static let stub = NextMathUpData(ownerClubName: "Chelsea", rank: 1, ownerClubLogo: "ChelseaLogo", otherClubName: "Watford", otherClubLogo: "WatfordLogo", gameDate: Date())
+}

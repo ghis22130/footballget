@@ -16,7 +16,7 @@ protocol NetworkService {
 
 final class DefaultNetworkService: NetworkService {
     
-    var session: URLSession
+    let session: URLSession
     
     init(configuration: URLSessionConfiguration = .default) {
         self.session = URLSession(configuration: configuration)
@@ -26,15 +26,30 @@ final class DefaultNetworkService: NetworkService {
         do {
             let request = try endpoint.request()
             return session.dataTaskPublisher(for: request)
-                .receive(on: DispatchQueue.global())
-                .map { $0.data }
-                .mapError { _ in NetworkError.unexpectedResponse }
+                .receive(on: DispatchQueue.main)
+                .dataMapError()
                 .eraseToAnyPublisher()
-        } catch {
-            return Fail(error: NetworkError.badRequest)
-                .eraseToAnyPublisher()
+        } catch let error {
+            return Fail(error: error).eraseToAnyPublisher()
         }
     }
     
+}
+
+
+extension Publisher where Output == URLSession.DataTaskPublisher.Output {
+    func dataMapError() -> AnyPublisher<Data, Error> {
+        return tryMap {
+            guard let code = ($0.response as? HTTPURLResponse)?.statusCode else {
+                throw NetworkError.unexpectedResponse
+            }
+            guard (200..<300).contains(code) else {
+                throw NetworkError.httpCode(code)
+            }
+            return $0.data
+        }
+        .receive(on: DispatchQueue.main)
+        .eraseToAnyPublisher()
+    }
 }
 

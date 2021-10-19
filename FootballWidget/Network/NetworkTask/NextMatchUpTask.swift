@@ -11,24 +11,24 @@ final class NextMatchUpTask: NetworkTask {
 
     typealias Input = NextMatchUpRequest
     
-    typealias Output = NextMatchUpResponseData
+    typealias Output = NextMatchUpResponse
     
     var service: NetworkService
     
-    init(_ service: NetworkService) {
+    init(_ service: NetworkService = DefaultNetworkService()) {
         self.service = service
     }
     
 }
 
 extension NextMatchUpTask {
-    struct NextMatchUpResponseData: Decodable {
+    struct NextMatchUpResponse: Decodable {
         let response: [Int: NextMatchUpResponse]
     }
 }
 
-extension NextMatchUpTask.NextMatchUpResponseData {
-    struct NextMatchUpResponse: Decodable {
+extension NextMatchUpTask.NextMatchUpResponse {
+    struct NextMatchUpResponseData: Decodable {
         let fixture: Fixture
         let league: League
         let teams: Teams
