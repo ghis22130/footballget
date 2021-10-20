@@ -53,6 +53,12 @@
 		FF1D5199271E8BA7000A8B80 /* ClubListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5164271E8776000A8B80 /* ClubListRequest.swift */; };
 		FF1D519A271E8BAD000A8B80 /* NextMatchUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5163271E8776000A8B80 /* NextMatchUpRequest.swift */; };
 		FF1D519B271E8BD4000A8B80 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5154271E8465000A8B80 /* Params.swift */; };
+		FF2C1304271FD7A30026A8DF /* ClubRankRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C1303271FD7A30026A8DF /* ClubRankRequest.swift */; };
+		FF2C1305271FD7A40026A8DF /* ClubRankRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C1303271FD7A30026A8DF /* ClubRankRequest.swift */; };
+		FF2C1306271FD7A40026A8DF /* ClubRankRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C1303271FD7A30026A8DF /* ClubRankRequest.swift */; };
+		FF2C1308271FD84F0026A8DF /* ClubRankTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C1307271FD84F0026A8DF /* ClubRankTask.swift */; };
+		FF2C1309271FD84F0026A8DF /* ClubRankTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C1307271FD84F0026A8DF /* ClubRankTask.swift */; };
+		FF2C130A271FD84F0026A8DF /* ClubRankTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2C1307271FD84F0026A8DF /* ClubRankTask.swift */; };
 		FF948101271EBE0900712469 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF948100271EBE0900712469 /* Utils.swift */; };
 		FF948102271EBF4800712469 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF948100271EBE0900712469 /* Utils.swift */; };
 		FF948105271EC5C400712469 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF948104271EC5C400712469 /* Kingfisher */; };
@@ -143,6 +149,8 @@
 		FF1D5185271E8AA0000A8B80 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		FF1D5188271E8AA0000A8B80 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		FF1D518A271E8AA0000A8B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF2C1303271FD7A30026A8DF /* ClubRankRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubRankRequest.swift; sourceTree = "<group>"; };
+		FF2C1307271FD84F0026A8DF /* ClubRankTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubRankTask.swift; sourceTree = "<group>"; };
 		FF948100271EBE0900712469 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		FF948108271ECB6100712469 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
 		FFC91258271E6DBD0078A44B /* FootballGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -280,6 +288,7 @@
 				FF1D5165271E8776000A8B80 /* NetworkRequest.swift */,
 				FF1D5163271E8776000A8B80 /* NextMatchUpRequest.swift */,
 				FF1D5164271E8776000A8B80 /* ClubListRequest.swift */,
+				FF2C1303271FD7A30026A8DF /* ClubRankRequest.swift */,
 			);
 			path = NetworkRequest;
 			sourceTree = "<group>";
@@ -290,6 +299,7 @@
 				FF1D5168271E8776000A8B80 /* NetworkTask.swift */,
 				FF1D5167271E8776000A8B80 /* NextMatchUpTask.swift */,
 				FF1D5169271E8776000A8B80 /* ClubListTask.swift */,
+				FF2C1307271FD84F0026A8DF /* ClubRankTask.swift */,
 			);
 			path = NetworkTask;
 			sourceTree = "<group>";
@@ -573,6 +583,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF1D5179271E8776000A8B80 /* NetworkService.swift in Sources */,
+				FF2C1305271FD7A40026A8DF /* ClubRankRequest.swift in Sources */,
 				FF1D5146271E82A8000A8B80 /* FootballGetWidget.intentdefinition in Sources */,
 				FFAE067C271E9F710057C03C /* NextMatchUpProvider.swift in Sources */,
 				FF1D5175271E8776000A8B80 /* NetworkTask.swift in Sources */,
@@ -582,6 +593,7 @@
 				FF1D517D271E8814000A8B80 /* Params.swift in Sources */,
 				FF948102271EBF4800712469 /* Utils.swift in Sources */,
 				FF1D5177271E8776000A8B80 /* ClubListTask.swift in Sources */,
+				FF2C1309271FD84F0026A8DF /* ClubRankTask.swift in Sources */,
 				FF1D5160271E86CD000A8B80 /* NextMatchUpWidgetView.swift in Sources */,
 				FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */,
 				FF1D5173271E8776000A8B80 /* NextMatchUpTask.swift in Sources */,
@@ -596,8 +608,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2C130A271FD84F0026A8DF /* ClubRankTask.swift in Sources */,
 				FF1D5194271E8B81000A8B80 /* NextMatchUpTask.swift in Sources */,
 				FF1D5196271E8B88000A8B80 /* NetworkError.swift in Sources */,
+				FF2C1306271FD7A40026A8DF /* ClubRankRequest.swift in Sources */,
 				FF1D5197271E8B8B000A8B80 /* NetworkRequest.swift in Sources */,
 				FF1D519B271E8BD4000A8B80 /* Params.swift in Sources */,
 				FF1D5191271E8AFD000A8B80 /* FootballGetWidget.intentdefinition in Sources */,
@@ -626,8 +640,10 @@
 				FF1D5155271E8465000A8B80 /* Params.swift in Sources */,
 				FF1D5152271E83FB000A8B80 /* Models.swift in Sources */,
 				FF1D5174271E8776000A8B80 /* NetworkTask.swift in Sources */,
+				FF2C1304271FD7A30026A8DF /* ClubRankRequest.swift in Sources */,
 				FF948101271EBE0900712469 /* Utils.swift in Sources */,
 				FF1D5178271E8776000A8B80 /* NetworkService.swift in Sources */,
+				FF2C1308271FD84F0026A8DF /* ClubRankTask.swift in Sources */,
 				FF1D515F271E86A0000A8B80 /* NextMatchUpWidgetView.swift in Sources */,
 				FF1D515D271E8670000A8B80 /* FotballGetWidgetEntryView.swift in Sources */,
 				FF948109271ECB6100712469 /* NetworkImage.swift in Sources */,
@@ -704,7 +720,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -732,7 +748,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

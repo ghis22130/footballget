@@ -27,38 +27,48 @@ final class NextMatchUpProvider: IntentTimelineProvider {
     }
     
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<NextMatchUpEntry>) -> Void) {
-        fetchNextMatchUp(for: configuration.Club) { result in
+        fetchNextMatchUp(league: configuration.League, club: configuration.Club) { result in
             switch result {
             case .success(let entry):
                 guard let entry = entry else { return }
-                let timeLine = Timeline(entries: [entry], policy: .after(Date().addingTimeInterval(60)))
+                let timeLine = Timeline(entries: [entry], policy: .after(Date().addingTimeInterval(60 * 60)))
                 completion(timeLine)
             case .failure(_):
-                let timeLine = Timeline(entries: [NextMatchUpEntry.snapshot], policy: .after(Date().addingTimeInterval(0 * 10)))
+                let timeLine = Timeline(entries: [NextMatchUpEntry.snapshot], policy: .after(Date().addingTimeInterval(1 * 10)))
                 completion(timeLine)
             }
         }
     }
     
-    private func fetchNextMatchUp(for param : ClubParam?, completion: @escaping (Result<Entry?, Error>) -> ()) {
-        guard let param = param, let id = param.identifier else { return }
+    private func fetchNextMatchUp(league: LeaguePram, club: ClubParam?, completion: @escaping (Result<Entry?, Error>) -> ()) {
+        guard let club = club, let clubID = club.identifier else { return }
         
-        let request = NextMatchUpRequest(id)
+        let rankRequest = ClubRankRequest(league: league.id, club: clubID)
+        let rankPublisher = ClubRankTask().perform(rankRequest)
         
-        NextMatchUpTask().perform(request).sink { result in
+        let nextMatchUpRequest = NextMatchUpRequest(clubID)
+        
+        NextMatchUpTask().perform(nextMatchUpRequest).combineLatest(rankPublisher).sink { result in
             switch result {
-            case .failure(let error): print(error)
+            case .failure(let error):
+                completion(.failure(error))
+                return
             case .finished: return
             }
+        } receiveValue: { (nextMatchUp, rank) in
+            guard let nextMatchUpData = nextMatchUp.response.first,
+                  let rank = rank.response.first?.league.standings?.first?.first?.rank else {
+                      completion(.failure(NetworkError.emptyData))
+                      return
+                  }
             
-        } receiveValue: { data in
-            guard let firstData = data.response.first else { return }
-            let entry = NextMatchUpEntry(date: Date(), nextMathUp: NextMathUpData(selected: id,
-                                                                                  fixture: firstData.fixture,
-                                                                                  clubs: firstData.teams,
-                                                                                  league: firstData.league))
+            let fixture = nextMatchUpData.fixture
+            let clubs = nextMatchUpData.teams
+            let league = nextMatchUpData.league
+            
+            let entry = NextMatchUpEntry(date: Date(), nextMathUp: NextMathUpData(selected: clubID, rank: rank, fixture: fixture, clubs: clubs, league: league))
+            
             completion(.success(entry))
         }.store(in: &cancelBag)
-
     }
 }

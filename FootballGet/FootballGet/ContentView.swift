@@ -12,24 +12,9 @@ var cancel: AnyCancellable?
 
 struct ContentView: View {
     var body: some View {
-        discript()
         return Text("Hello, world!")
             .padding()        
     }
-
-    func discript() {
-        let request = NextMatchUpRequest("33")
-        cancel = NextMatchUpTask().perform(request).sink {result in
-            switch result {
-            case .failure(let error): print(error)
-            case .finished: return
-            }
-        } receiveValue: { data in
-            print(data.response.first?.teams.home)
-        }
-    }
-    
-
 }
 
 struct ContentView_Previews: PreviewProvider {

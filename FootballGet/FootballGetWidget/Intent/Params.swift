@@ -8,14 +8,14 @@
 import Foundation
 
 extension LeaguePram {
-    var id: Int {
+    var id: String {
         switch self {
-        case .premierLeague: return 39
-        case .ligue1: return 62
-        case .bundesliga: return 78
-        case .serieA: return 135
-        case .laliga: return 140
-        default: return -1
+        case .premierLeague: return "39"
+        case .ligue1: return "62"
+        case .bundesliga: return "78"
+        case .serieA: return "135"
+        case .laliga: return "140"
+        default: return "-1"
         }
     }
     

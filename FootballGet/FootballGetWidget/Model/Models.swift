@@ -21,7 +21,14 @@ struct League: Decodable {
     let country: String
     let logo: String
     let season: Int
-    let round: String
+    let standings: [[Standing]]?
+}
+
+struct Standing: Decodable {
+    let rank: Int
+    let points: Int
+    let goalsDiff: Int
+    let form: String
 }
 
 struct Clubs: Decodable {
@@ -48,11 +55,11 @@ struct NextMathUpData {
 }
 
 extension NextMathUpData {
-    init(selected identifier: String, fixture: Fixture, clubs: Clubs, league: League) {
+    init(selected identifier: String, rank: Int, fixture: Fixture, clubs: Clubs, league: League) {
         let (selected, opposite) = NextMathUpData.division(selected: identifier, clubs: clubs)
         
         self.selectedClubName = selected.name
-        self.selectedClubrank = "1"
+        self.selectedClubrank = "\(rank)"
         self.selectedClubLogo = selected.logo
         self.oppositeClubName = opposite.name
         self.oppositeClubLogo = opposite.logo

@@ -14,4 +14,5 @@ enum NetworkError: Error {
     case decodingError(String)
     case unexpectedError
     case httpCode(Int)
+    case emptyData
 }

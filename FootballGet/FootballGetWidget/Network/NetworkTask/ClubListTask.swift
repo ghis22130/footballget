@@ -13,7 +13,7 @@ final class ClubListTask: NetworkTask {
     
     typealias Output = ClubListResponse
     
-    var service: NetworkService
+    let service: NetworkService
     
     init(_ service: NetworkService = DefaultNetworkService()) {
         self.service = service

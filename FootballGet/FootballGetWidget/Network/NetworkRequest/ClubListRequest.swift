@@ -16,10 +16,10 @@ final class ClubListRequest: NetworkRequest {
     
     var body: Data?
     
-    init(_ leagueId: Int) {
+    init(_ leagueId: String) {
         self.method = .get
         self.path = "teams"
-        self.queryItems = ["league" : "\(leagueId)", "season": "2021"]
+        self.queryItems = ["league" : leagueId, "season": "2021"]
     }
 }
 

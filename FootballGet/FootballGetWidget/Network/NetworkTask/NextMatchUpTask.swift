@@ -13,7 +13,7 @@ final class NextMatchUpTask: NetworkTask {
     
     typealias Output = NextMatchUpResponse
     
-    var service: NetworkService
+    let service: NetworkService
     
     init(_ service: NetworkService = DefaultNetworkService()) {
         self.service = service
