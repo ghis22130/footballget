@@ -128,17 +128,18 @@ class IntentHandler: INExtension, INSendMessageIntentHandling, INSearchForMessag
 
 extension IntentHandler: ConfigurationIntentHandling {
     func provideClubOptionsCollection(for intent: ConfigurationIntent, with completion: @escaping (INObjectCollection<ClubParam>?, Error?) -> Void) {
-
         let request = ClubListRequest(intent.League.id)
+        
         ClubListTask().perform(request).sink { result in
             switch result {
             case .failure(let error): print(error)
             case .finished: return
             }
         } receiveValue: { data in
-            print(data)
-            let clubParmas = data.response.map { ClubParam($0.club) }
-            completion( INObjectCollection(items: clubParmas), nil )
+            DispatchQueue.main.async {
+                let clubParmas = data.response.map { ClubParam($0.club) }
+                completion( INObjectCollection(items: clubParmas), nil )
+            }
         }.store(in: &cancelBag)
     }
     

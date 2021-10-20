@@ -6,8 +6,9 @@
 //
 
 import Combine
-import Foundation
+import SwiftUI
 import WidgetKit
+import Kingfisher
 
 final class NextMatchUpProvider: IntentTimelineProvider {
     

@@ -55,6 +55,10 @@
 		FF1D519B271E8BD4000A8B80 /* Params.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5154271E8465000A8B80 /* Params.swift */; };
 		FF948101271EBE0900712469 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF948100271EBE0900712469 /* Utils.swift */; };
 		FF948102271EBF4800712469 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF948100271EBE0900712469 /* Utils.swift */; };
+		FF948105271EC5C400712469 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF948104271EC5C400712469 /* Kingfisher */; };
+		FF948107271EC5D400712469 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF948106271EC5D400712469 /* Kingfisher */; };
+		FF948109271ECB6100712469 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF948108271ECB6100712469 /* NetworkImage.swift */; };
+		FF94810A271ECBC800712469 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF948108271ECB6100712469 /* NetworkImage.swift */; };
 		FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5159271E85C2000A8B80 /* NextMatchUpEntry.swift */; };
 		FFAE067C271E9F710057C03C /* NextMatchUpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5157271E859F000A8B80 /* NextMatchUpProvider.swift */; };
 		FFC9125C271E6DBD0078A44B /* FootballGetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9125B271E6DBD0078A44B /* FootballGetApp.swift */; };
@@ -140,6 +144,7 @@
 		FF1D5188271E8AA0000A8B80 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		FF1D518A271E8AA0000A8B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF948100271EBE0900712469 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FF948108271ECB6100712469 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
 		FFC91258271E6DBD0078A44B /* FootballGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC9125B271E6DBD0078A44B /* FootballGetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGetApp.swift; sourceTree = "<group>"; };
 		FFC9125D271E6DBD0078A44B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -157,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF948107271EC5D400712469 /* Kingfisher in Frameworks */,
 				FF1D513E271E82A5000A8B80 /* SwiftUI.framework in Frameworks */,
 				FF1D513C271E82A5000A8B80 /* WidgetKit.framework in Frameworks */,
 			);
@@ -174,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF948105271EC5C400712469 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +258,7 @@
 			children = (
 				FF1D515C271E8670000A8B80 /* FotballGetWidgetEntryView.swift */,
 				FF1D515E271E86A0000A8B80 /* NextMatchUpWidgetView.swift */,
+				FF948108271ECB6100712469 /* NetworkImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -381,6 +389,9 @@
 			dependencies = (
 			);
 			name = FootballGetWidgetExtension;
+			packageProductDependencies = (
+				FF948106271EC5D400712469 /* Kingfisher */,
+			);
 			productName = FootballGetWidgetExtension;
 			productReference = FF1D5139271E82A5000A8B80 /* FootballGetWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -418,6 +429,9 @@
 				FF1D518C271E8AA0000A8B80 /* PBXTargetDependency */,
 			);
 			name = FootballGet;
+			packageProductDependencies = (
+				FF948104271EC5C400712469 /* Kingfisher */,
+			);
 			productName = FootballGet;
 			productReference = FFC91258271E6DBD0078A44B /* FootballGet.app */;
 			productType = "com.apple.product-type.application";
@@ -496,6 +510,9 @@
 				Base,
 			);
 			mainGroup = FFC9124F271E6DBD0078A44B;
+			packageReferences = (
+				FF948103271EC5C400712469 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = FFC91259271E6DBD0078A44B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -561,6 +578,7 @@
 				FF1D5175271E8776000A8B80 /* NetworkTask.swift in Sources */,
 				FF1D516D271E8776000A8B80 /* NextMatchUpRequest.swift in Sources */,
 				FF1D516F271E8776000A8B80 /* ClubListRequest.swift in Sources */,
+				FF94810A271ECBC800712469 /* NetworkImage.swift in Sources */,
 				FF1D517D271E8814000A8B80 /* Params.swift in Sources */,
 				FF948102271EBF4800712469 /* Utils.swift in Sources */,
 				FF1D5177271E8776000A8B80 /* ClubListTask.swift in Sources */,
@@ -612,6 +630,7 @@
 				FF1D5178271E8776000A8B80 /* NetworkService.swift in Sources */,
 				FF1D515F271E86A0000A8B80 /* NextMatchUpWidgetView.swift in Sources */,
 				FF1D515D271E8670000A8B80 /* FotballGetWidgetEntryView.swift in Sources */,
+				FF948109271ECB6100712469 /* NetworkImage.swift in Sources */,
 				FF1D5170271E8776000A8B80 /* NetworkRequest.swift in Sources */,
 				FF1D5176271E8776000A8B80 /* ClubListTask.swift in Sources */,
 				FF1D516C271E8776000A8B80 /* NextMatchUpRequest.swift in Sources */,
@@ -673,6 +692,7 @@
 				INFOPLIST_FILE = FootballGetWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FootballGetWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -700,6 +720,7 @@
 				INFOPLIST_FILE = FootballGetWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FootballGetWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -816,7 +837,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -871,7 +892,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1099,6 +1120,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF948103271EC5C400712469 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF948104271EC5C400712469 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF948103271EC5C400712469 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FF948106271EC5D400712469 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF948103271EC5C400712469 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFC91250271E6DBD0078A44B /* Project object */;
 }

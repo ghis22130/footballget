@@ -68,6 +68,9 @@ extension NextMathUpData {
 }
 
 extension NextMathUpData {
-    static let snapshot = NextMathUpData(selectedClubName: "Manchester United", selectedClubrank: "1", selectedClubLogo: "ManchesterUnitedLogo", oppositeClubName: "Chelsea", oppositeClubLogo: "ChelseaLogo", gameDate: Date())
+    static let snapshot = NextMathUpData(selectedClubName: "Manchester United", selectedClubrank: "1", selectedClubLogo: NextMathUpData.muLogo, oppositeClubName: "Chelsea", oppositeClubLogo: NextMathUpData.chelseaLogo, gameDate: Date())
+    
+    static let muLogo = "https://media.api-sports.io/football/teams/33.png"
+    static let chelseaLogo = "https://media.api-sports.io/football/teams/49.png"
 }
 

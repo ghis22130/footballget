@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct NextMatchUpWidgetView: View {
     
@@ -34,16 +35,14 @@ struct NextMatchUpWidgetView: View {
                 
                 Spacer()
                 
-                Image(data.selectedClubLogo)
-                    .resizable()
+                NetworkImage(url: URL(string: data.selectedClubLogo))
                     .frame(width: 20, height: 20, alignment: .center)
                     .padding(.trailing, 15)
                 
             }
             
-            Image(data.oppositeClubLogo)
-                .resizable()
-                .frame(width: 80, height: 80, alignment: .center)
+            NetworkImage(url: URL(string: data.oppositeClubLogo))
+                .frame(width: 75, height: 75, alignment: .center)
                 .padding(.top, -5)
             
             HStack {
@@ -55,8 +54,9 @@ struct NextMatchUpWidgetView: View {
                     .font(.system(size: 12))
                     .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
             }.padding(.top, -5)
+            
             Text(data.gameDate.toString())
-                .font(.system(size: 12))
+                .font(.system(size: 10))
                 .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
         }
     }
