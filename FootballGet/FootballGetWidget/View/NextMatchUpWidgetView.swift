@@ -19,6 +19,7 @@ struct NextMatchUpWidgetView: View {
                 VStack(alignment: .leading) {
                     Text(data.selectedClubName)
                         .font(.system(size: 12))
+                        .fontWeight(.bold)
                         .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
                     
                     HStack {
@@ -36,8 +37,8 @@ struct NextMatchUpWidgetView: View {
                 Spacer()
                 
                 NetworkImage(url: URL(string: data.selectedClubLogo))
-                    .frame(width: 20, height: 20, alignment: .center)
-                    .padding(.trailing, 15)
+                    .frame(width: 25, height: 25, alignment: .center)
+                    .padding(.trailing, 10)
                 
             }
             
@@ -52,11 +53,14 @@ struct NextMatchUpWidgetView: View {
                 
                 Text(data.oppositeClubName)
                     .font(.system(size: 12))
+                    .fontWeight(.bold)
                     .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
+                    .padding(.leading, -3)
             }.padding(.top, -5)
             
             Text(data.gameDate.toString())
                 .font(.system(size: 10))
+                .fontWeight(.bold)
                 .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
         }
     }

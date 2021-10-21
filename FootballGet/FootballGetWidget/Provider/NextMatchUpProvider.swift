@@ -31,10 +31,12 @@ final class NextMatchUpProvider: IntentTimelineProvider {
             switch result {
             case .success(let entry):
                 guard let entry = entry else { return }
-                let timeLine = Timeline(entries: [entry], policy: .after(Date().addingTimeInterval(60 * 60)))
+                let refreshDate = entry.nextMathUp.gameDate // RefreshDate is time after Next Match
+                let timeLine = Timeline(entries: [entry], policy: .after(refreshDate))
                 completion(timeLine)
             case .failure(_):
-                let timeLine = Timeline(entries: [NextMatchUpEntry.snapshot], policy: .after(Date().addingTimeInterval(1 * 10)))
+                let refreshDate = Calendar.current.date(byAdding: .hour, value: 1, to: Date()) ?? Date() // if Data Load is fail, RefreshDate is 1 hour
+                let timeLine = Timeline(entries: [NextMatchUpEntry.snapshot], policy: .after(refreshDate))
                 completion(timeLine)
             }
         }
@@ -44,6 +46,7 @@ final class NextMatchUpProvider: IntentTimelineProvider {
         guard let club = club, let clubID = club.identifier else { return }
         
         let rankRequest = ClubRankRequest(league: league.id, club: clubID)
+        
         let rankPublisher = ClubRankTask().perform(rankRequest)
         
         let nextMatchUpRequest = NextMatchUpRequest(clubID)
