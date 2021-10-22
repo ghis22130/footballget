@@ -6,14 +6,44 @@
 //
 
 import WidgetKit
-import Foundation
+import UIKit
 
 struct NextMatchUpEntry: TimelineEntry {
-    var date: Date = Date()
-    let nextMathUp: NextMathUpData
+    var date: Date
+    let selectedClubName: String
+    let selectedClubrank: String
+    let selectedClubLogo: UIImage
+    let oppositeClubName: String
+    let oppositeClubLogo: UIImage
+    let gameDate: Date
+    
+}
+
+extension NextMatchUpEntry {
+    init(selected identifier: String, rank: Int, fixture: Fixture, clubs: Clubs, league: League, homeLogo: UIImage, awayLogo: UIImage) {
+        let (selected, opposite) = NextMatchUpEntry.division(selected: identifier, clubs: clubs, homeLogo: homeLogo, awayLogo: awayLogo)
+        
+        self.date = Date()
+        self.selectedClubName = selected.0.name
+        self.selectedClubrank = "\(rank)"
+        self.selectedClubLogo = selected.1
+        self.oppositeClubName = opposite.0.name
+        self.oppositeClubLogo = opposite.1
+        self.gameDate = fixture.date
+    }
+    
+    static func division(selected identifier: String, clubs: Clubs, homeLogo: UIImage, awayLogo: UIImage) -> ((Club, UIImage), (Club, UIImage)) {
+        let home = clubs.home
+        let away = clubs.away
+        
+        return String(home.id) == identifier ? ((home, homeLogo), (away, awayLogo)) : ((away, awayLogo), (home, homeLogo))
+    }
 }
 
 
 extension NextMatchUpEntry {
-    static let snapshot = NextMatchUpEntry(date: Date(), nextMathUp: NextMathUpData.snapshot)
+    static let snapshot = NextMatchUpEntry(date: Date(), selectedClubName: "Manchester United", selectedClubrank: "1", selectedClubLogo: NextMatchUpEntry.muLogo, oppositeClubName: "Chelsea", oppositeClubLogo: NextMatchUpEntry.chelseaLogo, gameDate: Date())
+    
+    static let muLogo = UIImage(named: "https://media.api-sports.io/football/teams/33.png") ?? UIImage()
+    static let chelseaLogo = UIImage(named: "https://media.api-sports.io/football/teams/49.png") ?? UIImage()
 }

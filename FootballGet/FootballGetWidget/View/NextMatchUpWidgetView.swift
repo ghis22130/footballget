@@ -6,18 +6,17 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 struct NextMatchUpWidgetView: View {
     
-    let data: NextMathUpData
+    let entry: NextMatchUpEntry
     
     var body: some View {
         VStack {
             HStack {
                 
                 VStack(alignment: .leading) {
-                    Text(data.selectedClubName)
+                    Text(entry.selectedClubName)
                         .font(.system(size: 12))
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
@@ -27,7 +26,7 @@ struct NextMatchUpWidgetView: View {
                             .font(.system(size: 10))
                             .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
                         
-                        Text(data.selectedClubrank)
+                        Text(entry.selectedClubrank)
                             .font(.system(size: 10))
                             .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
                             .padding(.leading, -5)
@@ -36,13 +35,15 @@ struct NextMatchUpWidgetView: View {
                 
                 Spacer()
                 
-                NetworkImage(url: URL(string: data.selectedClubLogo))
+                Image(uiImage: entry.selectedClubLogo)
+                    .resizable()
                     .frame(width: 25, height: 25, alignment: .center)
                     .padding(.trailing, 10)
                 
             }
             
-            NetworkImage(url: URL(string: data.oppositeClubLogo))
+            Image(uiImage: entry.oppositeClubLogo)
+                .resizable()
                 .frame(width: 75, height: 75, alignment: .center)
                 .padding(.top, -5)
             
@@ -51,14 +52,14 @@ struct NextMatchUpWidgetView: View {
                     .font(.system(size: 12))
                     .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
                 
-                Text(data.oppositeClubName)
+                Text(entry.oppositeClubName)
                     .font(.system(size: 12))
                     .fontWeight(.bold)
                     .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
                     .padding(.leading, -3)
             }.padding(.top, -5)
             
-            Text(data.gameDate.toString())
+            Text(entry.gameDate.toString())
                 .font(.system(size: 10))
                 .fontWeight(.bold)
                 .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
@@ -68,6 +69,6 @@ struct NextMatchUpWidgetView: View {
 
 struct NextMatchUpWidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        NextMatchUpWidgetView(data: .snapshot)
+        NextMatchUpWidgetView(entry: .snapshot)
     }
 }

@@ -17,7 +17,7 @@ struct FootballGetWidgetEntryView : View {
     var entry: NextMatchUpProvider.Entry
 
     var body: some View {
-        NextMatchUpWidgetView(data: entry.nextMathUp)
+        NextMatchUpWidgetView(entry: entry)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("WidgetBackground"))
     }
@@ -40,8 +40,7 @@ struct FootballGetWidget: Widget {
 
 struct FootballGetWidget_Previews: PreviewProvider {
     static var previews: some View {
-        FootballGetWidgetEntryView(entry: NextMatchUpEntry(nextMathUp: .snapshot))
+        FootballGetWidgetEntryView(entry: NextMatchUpEntry.snapshot)
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
-

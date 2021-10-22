@@ -31,7 +31,7 @@ final class NextMatchUpProvider: IntentTimelineProvider {
             switch result {
             case .success(let entry):
                 guard let entry = entry else { return }
-                let refreshDate = entry.nextMathUp.gameDate // RefreshDate is time after Next Match
+                let refreshDate = entry.gameDate // RefreshDate is time after Next Match
                 let timeLine = Timeline(entries: [entry], policy: .after(refreshDate))
                 completion(timeLine)
             case .failure(_):
@@ -58,20 +58,49 @@ final class NextMatchUpProvider: IntentTimelineProvider {
                 return
             case .finished: return
             }
-        } receiveValue: { (nextMatchUp, rank) in
-            guard let nextMatchUpData = nextMatchUp.response.first,
+        } receiveValue: { [weak self] (nextMatchUp, rank) in
+            guard let self = self,
+                  let nextMatchUpData = nextMatchUp.response.first,
                   let rank = rank.response.first?.league.standings?.first?.first?.rank else {
                       completion(.failure(NetworkError.emptyData))
                       return
                   }
             
+            let imageDownloader = ImageDownloader()
             let fixture = nextMatchUpData.fixture
             let clubs = nextMatchUpData.teams
             let league = nextMatchUpData.league
             
-            let entry = NextMatchUpEntry(date: Date(), nextMathUp: NextMathUpData(selected: clubID, rank: rank, fixture: fixture, clubs: clubs, league: league))
+            var homeLogo: AnyPublisher<UIImage, Never>?
+            imageDownloader.download(clubs.home.logo) { homeLogo = $0 }
             
-            completion(.success(entry))
+            var awayLogo: AnyPublisher<UIImage, Never>?
+            imageDownloader.download(clubs.away.logo) { awayLogo = $0 }
+            
+            guard let homeLogo = homeLogo, let awayLogo = awayLogo else { return }
+            
+            homeLogo.combineLatest(awayLogo)
+                .receive(on: DispatchQueue.main)
+                .sink { home, away  in
+                    let entry = NextMatchUpEntry(selected: clubID, rank: rank, fixture: fixture, clubs: clubs, league: league, homeLogo: home, awayLogo: away)
+                    completion(.success(entry))
+                }.store(in: &self.cancelBag)
         }.store(in: &cancelBag)
+    }
+}
+
+
+final class ImageDownloader {
+    
+    func download(_ url: String, completion: @escaping (AnyPublisher<UIImage, Never>)->()) {
+        guard let url = URL(string: url) else { return }
+        KingfisherManager.shared.retrieveImage(with: url) { result in
+            switch result {
+            case .success(let value):
+                completion(Just(value.image as UIImage).eraseToAnyPublisher())
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
