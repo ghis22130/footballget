@@ -12,7 +12,7 @@ struct FootballWidgetEntryView : View {
     var entry: NextMatchUpProvider.Entry
 
     var body: some View {
-        NextMatchUpWidgetView(data: entry.nextMathUp)
+        NextMatchUpWidgetView(entry: entry)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("WidgetBackground"))
     }

@@ -65,6 +65,11 @@
 		FF948107271EC5D400712469 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FF948106271EC5D400712469 /* Kingfisher */; };
 		FF948109271ECB6100712469 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF948108271ECB6100712469 /* NetworkImage.swift */; };
 		FF94810A271ECBC800712469 /* NetworkImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF948108271ECB6100712469 /* NetworkImage.swift */; };
+		FFAA171D27213A3400526888 /* ImageDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA171C27213A3400526888 /* ImageDataRequest.swift */; };
+		FFAA171E27213A3400526888 /* ImageDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA171C27213A3400526888 /* ImageDataRequest.swift */; };
+		FFAA171F27213A3400526888 /* ImageDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA171C27213A3400526888 /* ImageDataRequest.swift */; };
+		FFAA17292727C88800526888 /* ImageDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA17282727C88800526888 /* ImageDownLoader.swift */; };
+		FFAA172A2727C88800526888 /* ImageDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA17282727C88800526888 /* ImageDownLoader.swift */; };
 		FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5159271E85C2000A8B80 /* NextMatchUpEntry.swift */; };
 		FFAE067C271E9F710057C03C /* NextMatchUpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5157271E859F000A8B80 /* NextMatchUpProvider.swift */; };
 		FFC9125C271E6DBD0078A44B /* FootballGetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9125B271E6DBD0078A44B /* FootballGetApp.swift */; };
@@ -153,6 +158,8 @@
 		FF2C1307271FD84F0026A8DF /* ClubRankTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubRankTask.swift; sourceTree = "<group>"; };
 		FF948100271EBE0900712469 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		FF948108271ECB6100712469 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
+		FFAA171C27213A3400526888 /* ImageDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataRequest.swift; sourceTree = "<group>"; };
+		FFAA17282727C88800526888 /* ImageDownLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownLoader.swift; sourceTree = "<group>"; };
 		FFC91258271E6DBD0078A44B /* FootballGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC9125B271E6DBD0078A44B /* FootballGetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGetApp.swift; sourceTree = "<group>"; };
 		FFC9125D271E6DBD0078A44B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -222,8 +229,8 @@
 		FF1D513F271E82A5000A8B80 /* FootballGetWidget */ = {
 			isa = PBXGroup;
 			children = (
-				FF9480FF271EBDFC00712469 /* Utils */,
 				FF1D5140271E82A5000A8B80 /* FootballGetWidget.swift */,
+				FF9480FF271EBDFC00712469 /* Utils */,
 				FF1D5156271E8548000A8B80 /* Provider */,
 				FF1D5161271E8776000A8B80 /* Network */,
 				FF1D515B271E8658000A8B80 /* View */,
@@ -278,6 +285,7 @@
 				FF1D5166271E8776000A8B80 /* NetworkTask */,
 				FF1D516A271E8776000A8B80 /* NetworkService.swift */,
 				FF1D516B271E8776000A8B80 /* NetworkError.swift */,
+				FFAA17282727C88800526888 /* ImageDownLoader.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -289,6 +297,7 @@
 				FF1D5163271E8776000A8B80 /* NextMatchUpRequest.swift */,
 				FF1D5164271E8776000A8B80 /* ClubListRequest.swift */,
 				FF2C1303271FD7A30026A8DF /* ClubRankRequest.swift */,
+				FFAA171C27213A3400526888 /* ImageDataRequest.swift */,
 			);
 			path = NetworkRequest;
 			sourceTree = "<group>";
@@ -598,6 +607,8 @@
 				FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */,
 				FF1D5173271E8776000A8B80 /* NextMatchUpTask.swift in Sources */,
 				FF1D5171271E8776000A8B80 /* NetworkRequest.swift in Sources */,
+				FFAA171E27213A3400526888 /* ImageDataRequest.swift in Sources */,
+				FFAA172A2727C88800526888 /* ImageDownLoader.swift in Sources */,
 				FF1D517B271E8776000A8B80 /* NetworkError.swift in Sources */,
 				FF1D5141271E82A5000A8B80 /* FootballGetWidget.swift in Sources */,
 				FF1D517E271E8817000A8B80 /* Models.swift in Sources */,
@@ -615,6 +626,7 @@
 				FF1D5197271E8B8B000A8B80 /* NetworkRequest.swift in Sources */,
 				FF1D519B271E8BD4000A8B80 /* Params.swift in Sources */,
 				FF1D5191271E8AFD000A8B80 /* FootballGetWidget.intentdefinition in Sources */,
+				FFAA171F27213A3400526888 /* ImageDataRequest.swift in Sources */,
 				FF1D5193271E8B7F000A8B80 /* NetworkTask.swift in Sources */,
 				FF1D5192271E8B30000A8B80 /* ClubListTask.swift in Sources */,
 				FF1D519A271E8BAD000A8B80 /* NextMatchUpRequest.swift in Sources */,
@@ -632,6 +644,8 @@
 				FF1D517A271E8776000A8B80 /* NetworkError.swift in Sources */,
 				FFC9125E271E6DBD0078A44B /* ContentView.swift in Sources */,
 				FF1D5147271E82A8000A8B80 /* FootballGetWidget.intentdefinition in Sources */,
+				FFAA17292727C88800526888 /* ImageDownLoader.swift in Sources */,
+				FFAA171D27213A3400526888 /* ImageDataRequest.swift in Sources */,
 				FF1D515A271E85C2000A8B80 /* NextMatchUpEntry.swift in Sources */,
 				FF1D5158271E859F000A8B80 /* NextMatchUpProvider.swift in Sources */,
 				FF1D516E271E8776000A8B80 /* ClubListRequest.swift in Sources */,
