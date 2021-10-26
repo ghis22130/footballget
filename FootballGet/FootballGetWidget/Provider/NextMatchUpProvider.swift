@@ -51,56 +51,42 @@ final class NextMatchUpProvider: IntentTimelineProvider {
         
         let nextMatchUpRequest = NextMatchUpRequest(clubID)
         
-        NextMatchUpTask().perform(nextMatchUpRequest).combineLatest(rankPublisher).sink { result in
-            switch result {
-            case .failure(let error):
-                completion(.failure(error))
-                return
-            case .finished: return
-            }
-        } receiveValue: { [weak self] (nextMatchUp, rank) in
-            guard let self = self,
-                  let nextMatchUpData = nextMatchUp.response.first,
-                  let rank = rank.response.first?.league.standings?.first?.first?.rank else {
-                      completion(.failure(NetworkError.emptyData))
-                      return
-                  }
-            
-            let imageDownloader = ImageDownloader()
-            let fixture = nextMatchUpData.fixture
-            let clubs = nextMatchUpData.teams
-            let league = nextMatchUpData.league
-            
-            var homeLogo: AnyPublisher<UIImage, Never>?
-            imageDownloader.download(clubs.home.logo) { homeLogo = $0 }
-            
-            var awayLogo: AnyPublisher<UIImage, Never>?
-            imageDownloader.download(clubs.away.logo) { awayLogo = $0 }
-            
-            guard let homeLogo = homeLogo, let awayLogo = awayLogo else { return }
-            
-            homeLogo.combineLatest(awayLogo)
-                .receive(on: DispatchQueue.main)
-                .sink { home, away  in
-                    let entry = NextMatchUpEntry(selected: clubID, rank: rank, fixture: fixture, clubs: clubs, league: league, homeLogo: home, awayLogo: away)
-                    completion(.success(entry))
-                }.store(in: &self.cancelBag)
-        }.store(in: &cancelBag)
-    }
-}
-
-
-final class ImageDownloader {
-    
-    func download(_ url: String, completion: @escaping (AnyPublisher<UIImage, Never>)->()) {
-        guard let url = URL(string: url) else { return }
-        KingfisherManager.shared.retrieveImage(with: url) { result in
-            switch result {
-            case .success(let value):
-                completion(Just(value.image as UIImage).eraseToAnyPublisher())
-            case .failure(let error):
-                print(error)
-            }
-        }
+        NextMatchUpTask().perform(nextMatchUpRequest).combineLatest(rankPublisher)
+            .receive(on: DispatchQueue.main)
+            .sink { result in
+                switch result {
+                case .failure(let error):
+                    completion(.failure(error))
+                    return
+                case .finished: return
+                }
+            } receiveValue: { [weak self] (nextMatchUp, rank) in
+                guard let self = self,
+                      let nextMatchUpData = nextMatchUp.response.first,
+                      let rank = rank.response.first?.league.standings?.first?.first?.rank else {
+                          completion(.failure(NetworkError.emptyData))
+                          return
+                      }
+                
+                let imageDownloader = ImageDownloader()
+                let fixture = nextMatchUpData.fixture
+                let clubs = nextMatchUpData.teams
+                let league = nextMatchUpData.league
+                let homeLogo = imageDownloader.downloadWithPublisher(clubs.home.logo)
+                let awayLogo = imageDownloader.downloadWithPublisher(clubs.away.logo)
+                                
+                homeLogo.combineLatest(awayLogo)
+                    .receive(on: DispatchQueue.main)
+                    .sink(receiveCompletion: { result in
+                        switch result {
+                        case .failure(let error):
+                            completion(.failure(error))
+                        case .finished: return
+                        }
+                    }, receiveValue: { home, away  in
+                            let entry = NextMatchUpEntry(selected: clubID, rank: rank, fixture: fixture, clubs: clubs, league: league, homeLogo: home, awayLogo: away)
+                            completion(.success(entry))
+                        }).store(in: &self.cancelBag)
+            }.store(in: &cancelBag)
     }
 }
