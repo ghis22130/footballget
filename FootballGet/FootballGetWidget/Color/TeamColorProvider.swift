@@ -73,6 +73,31 @@ final class TeamColorProvidor {
         "182": TeamColor(teamName: "Union Berlin", mainColor: "#C23831", secondColor: "#F0EB64", teamNameColor: "#FFFFFF"),
         "188": TeamColor(teamName: "Arminia Bielefeld", mainColor: "#2755A0", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
         "192": TeamColor(teamName: "FC Koln", mainColor: "#DA3832", secondColor: "#000000", teamNameColor: "#FFFFFF"),
+        
+        
+        // Ligue 1
+        "77": TeamColor(teamName: "Angers", mainColor: "#000000", secondColor: "#CBBA8D", teamNameColor: "#FFFFFF"),
+        "78": TeamColor(teamName: "Bordeaux", mainColor: "#001B50", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "79": TeamColor(teamName: "Lille", mainColor: "#E01E13", secondColor: "#24216A", teamNameColor: "#FFFFFF"),
+        "80": TeamColor(teamName: "Lyon", mainColor: "#003A80", secondColor: "#DA001A", teamNameColor: "#FFFFFF"),
+        "81": TeamColor(teamName: "Marseille", mainColor: "#78B4DD", secondColor: "#B49875", teamNameColor: "#FFFFFF"),
+        "82": TeamColor(teamName: "Montpellier", mainColor: "#344575", secondColor: "#D87043", teamNameColor: "#D87043"),
+        "83": TeamColor(teamName: "Nantes", mainColor: "#245739", secondColor: "#FCD405", teamNameColor: "#FCD405"),
+        "84": TeamColor(teamName: "Nice", mainColor: "#C02929", secondColor: "#000000", teamNameColor: "#FFFFFF"),
+        "85": TeamColor(teamName: "Paris Saint Germain", mainColor: "#004170", secondColor: "#E30613", teamNameColor: "#FFFFFF"),
+        "91": TeamColor(teamName: "Monaco", mainColor: "#E51B22", secondColor: "#CB9F18", teamNameColor: "#FFFFFF"),
+        "93": TeamColor(teamName: "Reims", mainColor: "#D82E20", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "94": TeamColor(teamName: "Rennes", mainColor: "#D04334", secondColor: "#F3C048", teamNameColor: "#FFFFFF"),
+        "95": TeamColor(teamName: "Strasbourg", mainColor: "#009FE3", secondColor: "#DC2F34", teamNameColor: "#FFFFFF"),
+        "97": TeamColor(teamName: "Lorient", mainColor: "#E27539", secondColor: "#000000", teamNameColor: "#FFFFFF"),
+        "99": TeamColor(teamName: "Clermont Foot", mainColor: "#B32543", secondColor: "#102D63", teamNameColor: "#FFFFFF"),
+        "106": TeamColor(teamName: "Stade Brestois 29", mainColor: "#ED1C24", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "110": TeamColor(teamName: "Estac Troyes", mainColor: "#214E8D", secondColor: "#C4A950", teamNameColor: "#FFFFFF"),
+        "112": TeamColor(teamName: "Metz", mainColor: "#6E0F12", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "116": TeamColor(teamName: "Lens", mainColor: "#B7312C", secondColor: "#F8D749", teamNameColor: "#FFFFFF"),
+        "1063": TeamColor(teamName: "Saint Etienne", mainColor: "#008D3F", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        
+        // Serie A
     ]
     
     
