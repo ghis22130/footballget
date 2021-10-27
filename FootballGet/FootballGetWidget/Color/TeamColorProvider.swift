@@ -53,6 +53,26 @@ final class TeamColorProvidor {
         "728": TeamColor(teamName: "Rayo Vallecano", mainColor: "#D24235", secondColor: "#387765", teamNameColor: "#FFFFFF"),
         "798": TeamColor(teamName: "Mallorca", mainColor: "#DA3832", secondColor: "#3E8D5C", teamNameColor: "#EBD748"),
         "797": TeamColor(teamName: "Elche", mainColor: "#2B6232", secondColor: "#FFFB00", teamNameColor: "#FFFFFF"),
+        
+        // Bundes Liga
+        "157": TeamColor(teamName: "Bayern Munich", mainColor: "#C92C35", secondColor: "#2A64AC", teamNameColor: "#FFFFFF"),
+        "159": TeamColor(teamName: "Hertha Berlin", mainColor: "#004D9E", secondColor: "#000000", teamNameColor: "#FFFFFF"),
+        "160": TeamColor(teamName: "SC Freiburg", mainColor: "#000000", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "161": TeamColor(teamName: "VfL Wolfsburg", mainColor: "#65B32E", secondColor: "#52B5DF", teamNameColor: "#FFFFFF"),
+        "163": TeamColor(teamName: "Borussia Monchengladbach", mainColor: "#000000", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "164": TeamColor(teamName: "FSV Mainz 05", mainColor: "#ED1C24", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "165": TeamColor(teamName: "Borussia Dortmund", mainColor: "#000000", secondColor: "#FDE100", teamNameColor: "#FDE100"),
+        "167": TeamColor(teamName: "1899 Hoffenheim", mainColor: "#1C63B7", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "168": TeamColor(teamName: "Bayer Leverkusen", mainColor: "#E32221", secondColor: "#F3E500", teamNameColor: "#FFFFFF"),
+        "169": TeamColor(teamName: "Eintracht Frankfurt", mainColor: "#E1000F", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "170": TeamColor(teamName: "FC Augsburg", mainColor: "#46714D", secondColor: "BA3733", teamNameColor: "#FFFFFF"),
+        "172": TeamColor(teamName: "VfB Stuttgart", mainColor: "#E32219", secondColor: "#000000", teamNameColor: "#FFED00"),
+        "173": TeamColor(teamName: "RB Leipzig", mainColor: "#DD0741", secondColor: "#F3E500", teamNameColor: "#FFFFFF"),
+        "176": TeamColor(teamName: "VfL BOCHUM", mainColor: "#265BA4", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "178": TeamColor(teamName: "SpVgg Greuther Furth", mainColor: "#439741", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "182": TeamColor(teamName: "Union Berlin", mainColor: "#C23831", secondColor: "#F0EB64", teamNameColor: "#FFFFFF"),
+        "188": TeamColor(teamName: "Arminia Bielefeld", mainColor: "#2755A0", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "192": TeamColor(teamName: "FC Koln", mainColor: "#DA3832", secondColor: "#000000", teamNameColor: "#FFFFFF"),
     ]
     
     
