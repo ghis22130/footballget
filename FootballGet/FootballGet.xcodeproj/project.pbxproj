@@ -74,6 +74,7 @@
 		FFAB40CB2729171E0064E582 /* TeamColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40C927290C9D0064E582 /* TeamColorProvider.swift */; };
 		FFAB40D127291C160064E582 /* NextMatchUpTwoColorWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40D027291C160064E582 /* NextMatchUpTwoColorWidgetView.swift */; };
 		FFAB40D227291F580064E582 /* FotballGetWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D515C271E8670000A8B80 /* FotballGetWidgetEntryView.swift */; };
+		FFAB40D3272929BE0064E582 /* NextMatchUpTwoColorWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40D027291C160064E582 /* NextMatchUpTwoColorWidgetView.swift */; };
 		FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5159271E85C2000A8B80 /* NextMatchUpEntry.swift */; };
 		FFAE067C271E9F710057C03C /* NextMatchUpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5157271E859F000A8B80 /* NextMatchUpProvider.swift */; };
 		FFC9125C271E6DBD0078A44B /* FootballGetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9125B271E6DBD0078A44B /* FootballGetApp.swift */; };
@@ -614,6 +615,7 @@
 				FF1D5175271E8776000A8B80 /* NetworkTask.swift in Sources */,
 				FF1D516D271E8776000A8B80 /* NextMatchUpRequest.swift in Sources */,
 				FF1D516F271E8776000A8B80 /* ClubListRequest.swift in Sources */,
+				FFAB40D3272929BE0064E582 /* NextMatchUpTwoColorWidgetView.swift in Sources */,
 				FF94810A271ECBC800712469 /* NetworkImage.swift in Sources */,
 				FF1D517D271E8814000A8B80 /* Params.swift in Sources */,
 				FFAB40CB2729171E0064E582 /* TeamColorProvider.swift in Sources */,

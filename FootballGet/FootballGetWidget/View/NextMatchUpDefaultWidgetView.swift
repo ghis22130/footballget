@@ -29,7 +29,6 @@ struct NextMatchUpDefaultWidgetView: View {
                         Text("Rank")
                             .font(.system(size: 10))
                             .foregroundColor(.white)
-                            .foregroundColor(.white)
                         
                         Text(entry.selectedClubrank)
                             .font(.system(size: 10))

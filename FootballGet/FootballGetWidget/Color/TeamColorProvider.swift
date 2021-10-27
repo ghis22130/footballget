@@ -30,6 +30,9 @@ final class TeamColorProvidor {
         "39": TeamColor(teamName: "Wolves", mainColor: "#231F20", secondColor: "#FDB913", teamNameColor: "#FFFFFF"),
         "63": TeamColor(teamName: "Leeds", mainColor: "#1D428A", secondColor: "#FFCD00", teamNameColor: "#FFFFFF"),
         "55": TeamColor(teamName: "Brentford", mainColor: "#E30613", secondColor: "#FBB800", teamNameColor: "#FFFFFF")
+        
+        
+        // LA LIGA
     ]
     
     
