@@ -32,7 +32,9 @@ final class ImageDownloader {
             switch result {
             case .success(let value):
                 let image = value.image as UIImage
-                publisher.send(image)
+                DispatchQueue.global().asyncAfter(deadline: .now() + 0.2) {
+                    publisher.send(image)
+                }
             case .failure(let error):
                 print(error)
             }
