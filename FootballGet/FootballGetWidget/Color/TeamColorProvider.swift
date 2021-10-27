@@ -8,7 +8,7 @@
 import Foundation
 
 final class TeamColorProvidor {
-    static var colorBook: [String: TeamColor] = [
+    static private var colorBook: [String: TeamColor] = [
         //Premier League
         "42": TeamColor(teamName: "Arsenal", mainColor: "#EF0107", secondColor: "#063672", teamNameColor: "#FFFFFF"),
         "66": TeamColor(teamName: "Aston Villa", mainColor: "#95BFE5", secondColor: "#670E36", teamNameColor: "#FFFFFF"),
@@ -98,6 +98,26 @@ final class TeamColorProvidor {
         "1063": TeamColor(teamName: "Saint Etienne", mainColor: "#008D3F", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
         
         // Serie A
+        "487": TeamColor(teamName: "Lazio", mainColor: "#85D8F8", secondColor: "#D1AA38", teamNameColor: "#15366F"),
+        "488": TeamColor(teamName: "Sassuolo", mainColor: "#33B65B", secondColor: "#000000", teamNameColor: "#A7A5A6"),
+        "489": TeamColor(teamName: "AC Milan", mainColor: "#FB090B", secondColor: "#000000", teamNameColor: "#FFFFFF"),
+        "490": TeamColor(teamName: "Cagliari", mainColor: "#082242", secondColor: "#B01028", teamNameColor: "#FFFFFF"),
+        "492": TeamColor(teamName: "Napoli", mainColor: "#003E81", secondColor: "#199FD6", teamNameColor: "#FFFFFF"),
+        "494": TeamColor(teamName: "Udinese", mainColor: "#8B7D37", secondColor: "#7F7F7F", teamNameColor: "#FFFFFF"),
+        "495": TeamColor(teamName: "Genoa", mainColor: "#06222E", secondColor: "#AF191C", teamNameColor: "#FECC13"),
+        "496": TeamColor(teamName: "Juventus", mainColor: "#000000", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "497": TeamColor(teamName: "AS Roma", mainColor: "#970A2C", secondColor: "#FBBA00", teamNameColor: "#FBBA00"),
+        "498": TeamColor(teamName: "Sampdoria", mainColor: "#0079BB", secondColor: "#DC351B", teamNameColor: "#FFFFFF"),
+        "499": TeamColor(teamName: "Atalanta", mainColor: "#2D5CAE", secondColor: "#000000", teamNameColor: "#000000"),
+        "500": TeamColor(teamName: "Bologna", mainColor: "#1B2838", secondColor: "#9F1F33", teamNameColor: "#FFFFFF"),
+        "502": TeamColor(teamName: "Fiorentina", mainColor: "#420A92", secondColor: "#CE0000", teamNameColor: "#FFFFFF"),
+        "503": TeamColor(teamName: "Torino", mainColor: "#881F19", secondColor: "#ECB215", teamNameColor: "#FFFFFF"),
+        "504": TeamColor(teamName: "Verona", mainColor: "#172983", secondColor: "#EACC00", teamNameColor: "#EACC00"),
+        "505": TeamColor(teamName: "Inter", mainColor: "#0267AB", secondColor: "#A29161", teamNameColor: "#FFFFFF"),
+        "511": TeamColor(teamName: "Empoli", mainColor: "#235697", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "514": TeamColor(teamName: "Salernitana", mainColor: "#772420", secondColor: "#EAB543", teamNameColor: "#FFFFFF"),
+        "515": TeamColor(teamName: "Spezia", mainColor: "#000000", secondColor: "#958452", teamNameColor: "#FFFFFF"),
+        "517": TeamColor(teamName: "Venezia", mainColor: "#DA9748", secondColor: "#61713F", teamNameColor: "#000000"),
     ]
     
     
