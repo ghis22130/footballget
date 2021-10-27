@@ -89,6 +89,7 @@ struct NextMatchUpTwoColorWidgetView: View {
                     .font(.system(size: 12))
                     .fontWeight(.bold)
                     .foregroundColor(.white)
+                    .lineLimit(1)
                     .padding(.leading, -3)
             }.padding(.top, -5)
             
