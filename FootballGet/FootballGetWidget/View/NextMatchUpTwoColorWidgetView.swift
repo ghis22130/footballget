@@ -77,8 +77,8 @@ struct NextMatchUpTwoColorWidgetView: View {
             
             Image(uiImage: entry.oppositeClubLogo)
                 .resizable()
-                .frame(width: 75, height: 75, alignment: .center)
-                .padding(.top, -5)
+                .frame(width: 70, height: 70, alignment: .center)
+                
             
             HStack {
                 Text("vs")

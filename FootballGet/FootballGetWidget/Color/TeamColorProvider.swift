@@ -29,10 +29,30 @@ final class TeamColorProvidor {
         "48": TeamColor(teamName: "West Ham", mainColor: "#7A263A", secondColor: "#1BB1E7", teamNameColor: "#F3D459"),
         "39": TeamColor(teamName: "Wolves", mainColor: "#231F20", secondColor: "#FDB913", teamNameColor: "#FFFFFF"),
         "63": TeamColor(teamName: "Leeds", mainColor: "#1D428A", secondColor: "#FFCD00", teamNameColor: "#FFFFFF"),
-        "55": TeamColor(teamName: "Brentford", mainColor: "#E30613", secondColor: "#FBB800", teamNameColor: "#FFFFFF")
+        "55": TeamColor(teamName: "Brentford", mainColor: "#E30613", secondColor: "#FBB800", teamNameColor: "#FFFFFF"),
         
         
         // LA LIGA
+        "529": TeamColor(teamName: "Barcelona", mainColor: "#971D45", secondColor: "#1E4C93", teamNameColor: "#E5BD3F"),
+        "530": TeamColor(teamName: "Atletico Madrid", mainColor: "#272E61", secondColor: "#CB3524", teamNameColor: "#FFFFFF"),
+        "531": TeamColor(teamName: "Athletic Club", mainColor: "#EE2523", secondColor: "#FFFFFF", teamNameColor: "#000000"),
+        "532": TeamColor(teamName: "Valencia", mainColor: "#E07338", secondColor: "#0097D7", teamNameColor: "#FFFFFF"),
+        "533": TeamColor(teamName: "Villarreal", mainColor: "#005187", secondColor: "#E70005", teamNameColor: "#FFE667"),
+        "536": TeamColor(teamName: "Sevilla", mainColor: "#F43333", secondColor: "#C79100", teamNameColor: "#FFFFFF"),
+        "538": TeamColor(teamName: "Celta Vigo", mainColor: "#96C1EA", secondColor: "#D23B52", teamNameColor: "#FFFFFF"),
+        "539": TeamColor(teamName: "Levante", mainColor: "#B4053F", secondColor: "#005CA5", teamNameColor: "#DCA43E"),
+        "540": TeamColor(teamName: "Espanyol", mainColor: "#3669BA", secondColor: "#EA372D", teamNameColor: "#FFFFFF"),
+        "541": TeamColor(teamName: "Real Madrid", mainColor: "#00529F", secondColor: "#FEBE10", teamNameColor: "#FFFFFF"),
+        "542": TeamColor(teamName: "Alaves", mainColor: "#0761AF", secondColor: "#009AD7", teamNameColor: "#FFFFFF"),
+        "543": TeamColor(teamName: "Real Betis", mainColor: "#0BB363", secondColor: "#E7A614", teamNameColor: "#FFFFFF"),
+        "546": TeamColor(teamName: "Getafe", mainColor: "#005999", secondColor: "#C43A2F", teamNameColor: "#FFFFFF"),
+        "548": TeamColor(teamName: "Real Sociedad", mainColor: "#0067B1", secondColor: "#D87722", teamNameColor: "#FFFFFF"),
+        "715": TeamColor(teamName: "Granada CF", mainColor: "#A61B2B", secondColor: "#3734FF", teamNameColor: "#FFFFFF"),
+        "724": TeamColor(teamName: "Cadiz", mainColor: "#3469B0", secondColor: "#FDF251", teamNameColor: "#FDF251"),
+        "727": TeamColor(teamName: "Osasuna", mainColor: "#D91A21", secondColor: "#0A346F", teamNameColor: "#FFFFFF"),
+        "728": TeamColor(teamName: "Rayo Vallecano", mainColor: "#D24235", secondColor: "#387765", teamNameColor: "#FFFFFF"),
+        "798": TeamColor(teamName: "Mallorca", mainColor: "#DA3832", secondColor: "#3E8D5C", teamNameColor: "#EBD748"),
+        "797": TeamColor(teamName: "Elche", mainColor: "#2B6232", secondColor: "#FFFB00", teamNameColor: "#FFFFFF"),
     ]
     
     
