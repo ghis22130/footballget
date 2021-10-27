@@ -1,15 +1,18 @@
 //
-//  NextMatchUpWidgetView.swift
+//  NextMatchUpTwoColorWidgetView.swift
 //  FootballGet
 //
-//  Created by 지북 on 2021/10/19.
+//  Created by 지북 on 2021/10/27.
 //
 
 import SwiftUI
 
-struct NextMatchUpWidgetView: View {
-    
+struct NextMatchUpTwoColorWidgetView: View {
     let entry: NextMatchUpEntry
+    
+    init(entry: NextMatchUpEntry) {
+        self.entry = entry
+    }
     
     var body: some View {
         VStack {
@@ -19,16 +22,17 @@ struct NextMatchUpWidgetView: View {
                     Text(entry.selectedClubName)
                         .font(.system(size: 12))
                         .fontWeight(.bold)
-                        .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
+                        .foregroundColor(.white)
                     
                     HStack {
                         Text("Rank")
                             .font(.system(size: 10))
-                            .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
+                            .foregroundColor(.white)
+                            .foregroundColor(.white)
                         
                         Text(entry.selectedClubrank)
                             .font(.system(size: 10))
-                            .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
+                            .foregroundColor(.white)
                             .padding(.leading, -5)
                     }
                 }.padding(.leading, 15)
@@ -50,25 +54,25 @@ struct NextMatchUpWidgetView: View {
             HStack {
                 Text("vs")
                     .font(.system(size: 12))
-                    .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
-                
+                    .foregroundColor(.white)
+
                 Text(entry.oppositeClubName)
                     .font(.system(size: 12))
                     .fontWeight(.bold)
-                    .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
+                    .foregroundColor(.white)
                     .padding(.leading, -3)
             }.padding(.top, -5)
             
             Text(entry.gameDate.toString())
                 .font(.system(size: 10))
                 .fontWeight(.bold)
-                .foregroundColor(Color(red: 0.84, green: 0.835, blue: 0.844))
+                .foregroundColor(.white)
         }
     }
 }
 
-struct NextMatchUpWidgetView_Previews: PreviewProvider {
+struct NextMatchUpTwoColorWidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        NextMatchUpWidgetView(entry: .snapshot)
+        NextMatchUpTwoColorWidgetView(entry: .snapshot)
     }
 }
