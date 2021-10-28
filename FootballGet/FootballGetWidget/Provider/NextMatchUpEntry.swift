@@ -20,6 +20,7 @@ struct NextMatchUpEntry: TimelineEntry {
     let style: StylePram
 }
 
+// MARK: - init
 extension NextMatchUpEntry {
     init(selected identifier: String, rank: Int, fixture: Fixture, clubs: Clubs, league: League, homeLogo: UIImage, awayLogo: UIImage, style: StylePram) {
         let (selected, opposite) = NextMatchUpEntry.division(selected: identifier, clubs: clubs, homeLogo: homeLogo, awayLogo: awayLogo)
@@ -44,6 +45,8 @@ extension NextMatchUpEntry {
 }
 
 
+
+// MARK: - Mock
 extension NextMatchUpEntry {
     static let snapshot = NextMatchUpEntry(date: Date(), selectedClubName: "Manchester United", selectedClubrank: "1", selectedClubLogo: NextMatchUpEntry.muLogo, oppositeClubName: "Chelsea", oppositeClubLogo: NextMatchUpEntry.chelseaLogo, gameDate: Date(), teamColor: TeamColorProvidor.teamColor(id: "33"), style: .defaultColor)
     

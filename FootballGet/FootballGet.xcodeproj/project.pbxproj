@@ -75,6 +75,8 @@
 		FFAB40D127291C160064E582 /* NextMatchUpTwoColorWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40D027291C160064E582 /* NextMatchUpTwoColorWidgetView.swift */; };
 		FFAB40D227291F580064E582 /* FotballGetWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D515C271E8670000A8B80 /* FotballGetWidgetEntryView.swift */; };
 		FFAB40D3272929BE0064E582 /* NextMatchUpTwoColorWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40D027291C160064E582 /* NextMatchUpTwoColorWidgetView.swift */; };
+		FFAB40D5272A29750064E582 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40D4272A29750064E582 /* Color Extension.swift */; };
+		FFAB40D6272A29750064E582 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40D4272A29750064E582 /* Color Extension.swift */; };
 		FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5159271E85C2000A8B80 /* NextMatchUpEntry.swift */; };
 		FFAE067C271E9F710057C03C /* NextMatchUpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5157271E859F000A8B80 /* NextMatchUpProvider.swift */; };
 		FFC9125C271E6DBD0078A44B /* FootballGetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9125B271E6DBD0078A44B /* FootballGetApp.swift */; };
@@ -167,6 +169,7 @@
 		FFAA17282727C88800526888 /* ImageDownLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownLoader.swift; sourceTree = "<group>"; };
 		FFAB40C927290C9D0064E582 /* TeamColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamColorProvider.swift; sourceTree = "<group>"; };
 		FFAB40D027291C160064E582 /* NextMatchUpTwoColorWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpTwoColorWidgetView.swift; sourceTree = "<group>"; };
+		FFAB40D4272A29750064E582 /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
 		FFC91258271E6DBD0078A44B /* FootballGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC9125B271E6DBD0078A44B /* FootballGetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGetApp.swift; sourceTree = "<group>"; };
 		FFC9125D271E6DBD0078A44B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -343,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				FFAB40C927290C9D0064E582 /* TeamColorProvider.swift */,
+				FFAB40D4272A29750064E582 /* Color Extension.swift */,
 			);
 			path = Color;
 			sourceTree = "<group>";
@@ -622,6 +626,7 @@
 				FF948102271EBF4800712469 /* Utils.swift in Sources */,
 				FF1D5177271E8776000A8B80 /* ClubListTask.swift in Sources */,
 				FF2C1309271FD84F0026A8DF /* ClubRankTask.swift in Sources */,
+				FFAB40D6272A29750064E582 /* Color Extension.swift in Sources */,
 				FF1D5160271E86CD000A8B80 /* NextMatchUpDefaultWidgetView.swift in Sources */,
 				FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */,
 				FF1D5173271E8776000A8B80 /* NextMatchUpTask.swift in Sources */,
@@ -665,6 +670,7 @@
 				FFC9125E271E6DBD0078A44B /* ContentView.swift in Sources */,
 				FF1D5147271E82A8000A8B80 /* FootballGetWidget.intentdefinition in Sources */,
 				FFAA17292727C88800526888 /* ImageDownLoader.swift in Sources */,
+				FFAB40D5272A29750064E582 /* Color Extension.swift in Sources */,
 				FFAA171D27213A3400526888 /* ImageDataRequest.swift in Sources */,
 				FF1D515A271E85C2000A8B80 /* NextMatchUpEntry.swift in Sources */,
 				FF1D5158271E859F000A8B80 /* NextMatchUpProvider.swift in Sources */,

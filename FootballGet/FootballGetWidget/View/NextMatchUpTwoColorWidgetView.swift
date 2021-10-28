@@ -11,30 +11,6 @@ struct NextMatchUpTwoColorWidgetView: View {
     
     let entry: NextMatchUpEntry
     
-    var teamNameColor: Color {
-        guard let hex = entry.teamColor?.teamNameColor else {
-            return Color.white
-        }
-        
-        return Color(hex: hex)
-    }
-    
-    var mainColor: Color {
-        guard let hex = entry.teamColor?.mainColor else {
-            return Color.clear
-        }
-        
-        return Color(hex: hex)
-    }
-    
-    var secondColor: Color {
-        guard let hex = entry.teamColor?.secondColor else {
-            return Color.clear
-        }
-        
-        return Color(hex: hex)
-    }
-    
     init(entry: NextMatchUpEntry) {
         self.entry = entry
     }
@@ -47,16 +23,16 @@ struct NextMatchUpTwoColorWidgetView: View {
                     Text(entry.selectedClubName)
                         .font(.system(size: 12))
                         .fontWeight(.bold)
-                        .foregroundColor(teamNameColor)
+                        .foregroundColor(entry.teamNameColor)
                     
                     HStack {
                         Text("Rank")
                             .font(.system(size: 10))
-                            .foregroundColor(teamNameColor)
+                            .foregroundColor(entry.teamNameColor)
                         
                         Text(entry.selectedClubrank)
                             .font(.system(size: 10))
-                            .foregroundColor(teamNameColor)
+                            .foregroundColor(entry.teamNameColor)
                             .padding(.leading, -5)
                     }.padding(.bottom, 3)
                 }.padding(.leading, 15)
@@ -68,11 +44,11 @@ struct NextMatchUpTwoColorWidgetView: View {
                     .frame(width: 25, height: 25, alignment: .center)
                     .padding(.trailing, 10)
                 
-            }.background(mainColor)
+            }.background(entry.mainColor)
                 .padding(.top, 20)
-                .background(mainColor)
+                .background(entry.mainColor)
                 .padding(.bottom, 2)
-                .background(secondColor)
+                .background(entry.secondColor)
                 .padding(.top, -20)
             
             Image(uiImage: entry.oppositeClubLogo)
