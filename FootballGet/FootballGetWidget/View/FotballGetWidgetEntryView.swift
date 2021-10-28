@@ -8,12 +8,27 @@
 import WidgetKit
 import SwiftUI
 
-struct FootballWidgetEntryView : View {
+struct FootballGetWidgetEntryView : View {
     var entry: NextMatchUpProvider.Entry
-
+    
     var body: some View {
-        NextMatchUpWidgetView(entry: entry)
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color("WidgetBackground"))
+        
+        switch entry.style {
+        case .defaultColor:
+            return AnyView(NextMatchUpDefaultWidgetView(entry: entry))
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color("WidgetBackground"))
+        case .twoColor:
+            return AnyView(NextMatchUpTwoColorWidgetView(entry: entry))
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color("WidgetBackground"))
+        case .mainColor:
+            return AnyView(NextMatchUpMainColorWidgetView(entry: entry))
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(entry.mainColor)
+        default:
+            return AnyView(NextMatchUpDefaultWidgetView(entry: entry))
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color("WidgetBackground"))        }
     }
 }

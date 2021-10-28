@@ -27,7 +27,7 @@ final class NextMatchUpProvider: IntentTimelineProvider {
     }
     
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<NextMatchUpEntry>) -> Void) {
-        fetchNextMatchUp(league: configuration.League, club: configuration.Club) { result in
+        fetchNextMatchUp(configuration: configuration) { result in
             switch result {
             case .success(let entry):
                 guard let entry = entry else { return }
@@ -42,8 +42,10 @@ final class NextMatchUpProvider: IntentTimelineProvider {
         }
     }
     
-    private func fetchNextMatchUp(league: LeaguePram, club: ClubParam?, completion: @escaping (Result<Entry?, Error>) -> ()) {
-        guard let club = club, let clubID = club.identifier else { return }
+    private func fetchNextMatchUp(configuration: ConfigurationIntent, completion: @escaping (Result<Entry?, Error>) -> ()) {
+        let league = configuration.League
+        guard let club = configuration.Club, let clubID = club.identifier else { return }
+        let style = configuration.Style
         
         let rankRequest = ClubRankRequest(league: league.id, club: clubID)
         
@@ -84,7 +86,7 @@ final class NextMatchUpProvider: IntentTimelineProvider {
                         case .finished: return
                         }
                     }, receiveValue: { home, away  in
-                            let entry = NextMatchUpEntry(selected: clubID, rank: rank, fixture: fixture, clubs: clubs, league: league, homeLogo: home, awayLogo: away)
+                        let entry = NextMatchUpEntry(selected: clubID, rank: rank, fixture: fixture, clubs: clubs, league: league, homeLogo: home, awayLogo: away, style: style)
                             completion(.success(entry))
                         }).store(in: &self.cancelBag)
             }.store(in: &cancelBag)

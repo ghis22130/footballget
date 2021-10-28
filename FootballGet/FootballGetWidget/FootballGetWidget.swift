@@ -13,16 +13,6 @@ import Intents
 
 var cancel: AnyCancellable?
 
-struct FootballGetWidgetEntryView : View {
-    var entry: NextMatchUpProvider.Entry
-
-    var body: some View {
-        NextMatchUpWidgetView(entry: entry)
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color("WidgetBackground"))
-    }
-}
-
 @main
 struct FootballGetWidget: Widget {
     let kind: String = "FootballGetWidget"

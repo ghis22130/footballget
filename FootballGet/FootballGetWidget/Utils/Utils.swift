@@ -5,7 +5,7 @@
 //  Created by 지북 on 2021/10/19.
 //
 
-import Foundation
+import SwiftUI
 
 extension Date {
     func toString() -> String {

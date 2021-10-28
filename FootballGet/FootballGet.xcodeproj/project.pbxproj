@@ -19,8 +19,8 @@
 		FF1D5158271E859F000A8B80 /* NextMatchUpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5157271E859F000A8B80 /* NextMatchUpProvider.swift */; };
 		FF1D515A271E85C2000A8B80 /* NextMatchUpEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5159271E85C2000A8B80 /* NextMatchUpEntry.swift */; };
 		FF1D515D271E8670000A8B80 /* FotballGetWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D515C271E8670000A8B80 /* FotballGetWidgetEntryView.swift */; };
-		FF1D515F271E86A0000A8B80 /* NextMatchUpWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D515E271E86A0000A8B80 /* NextMatchUpWidgetView.swift */; };
-		FF1D5160271E86CD000A8B80 /* NextMatchUpWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D515E271E86A0000A8B80 /* NextMatchUpWidgetView.swift */; };
+		FF1D515F271E86A0000A8B80 /* NextMatchUpDefaultWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D515E271E86A0000A8B80 /* NextMatchUpDefaultWidgetView.swift */; };
+		FF1D5160271E86CD000A8B80 /* NextMatchUpDefaultWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D515E271E86A0000A8B80 /* NextMatchUpDefaultWidgetView.swift */; };
 		FF1D516C271E8776000A8B80 /* NextMatchUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5163271E8776000A8B80 /* NextMatchUpRequest.swift */; };
 		FF1D516D271E8776000A8B80 /* NextMatchUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5163271E8776000A8B80 /* NextMatchUpRequest.swift */; };
 		FF1D516E271E8776000A8B80 /* ClubListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5164271E8776000A8B80 /* ClubListRequest.swift */; };
@@ -70,6 +70,15 @@
 		FFAA171F27213A3400526888 /* ImageDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA171C27213A3400526888 /* ImageDataRequest.swift */; };
 		FFAA17292727C88800526888 /* ImageDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA17282727C88800526888 /* ImageDownLoader.swift */; };
 		FFAA172A2727C88800526888 /* ImageDownLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAA17282727C88800526888 /* ImageDownLoader.swift */; };
+		FFAB40CA27290C9D0064E582 /* TeamColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40C927290C9D0064E582 /* TeamColorProvider.swift */; };
+		FFAB40CB2729171E0064E582 /* TeamColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40C927290C9D0064E582 /* TeamColorProvider.swift */; };
+		FFAB40D127291C160064E582 /* NextMatchUpTwoColorWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40D027291C160064E582 /* NextMatchUpTwoColorWidgetView.swift */; };
+		FFAB40D227291F580064E582 /* FotballGetWidgetEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D515C271E8670000A8B80 /* FotballGetWidgetEntryView.swift */; };
+		FFAB40D3272929BE0064E582 /* NextMatchUpTwoColorWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40D027291C160064E582 /* NextMatchUpTwoColorWidgetView.swift */; };
+		FFAB40D5272A29750064E582 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40D4272A29750064E582 /* Color Extension.swift */; };
+		FFAB40D6272A29750064E582 /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40D4272A29750064E582 /* Color Extension.swift */; };
+		FFAB40DB272A2C680064E582 /* NextMatchUpMainColorWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40DA272A2C680064E582 /* NextMatchUpMainColorWidgetView.swift */; };
+		FFAB40DC272A2C680064E582 /* NextMatchUpMainColorWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAB40DA272A2C680064E582 /* NextMatchUpMainColorWidgetView.swift */; };
 		FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5159271E85C2000A8B80 /* NextMatchUpEntry.swift */; };
 		FFAE067C271E9F710057C03C /* NextMatchUpProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D5157271E859F000A8B80 /* NextMatchUpProvider.swift */; };
 		FFC9125C271E6DBD0078A44B /* FootballGetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9125B271E6DBD0078A44B /* FootballGetApp.swift */; };
@@ -141,7 +150,7 @@
 		FF1D5157271E859F000A8B80 /* NextMatchUpProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpProvider.swift; sourceTree = "<group>"; };
 		FF1D5159271E85C2000A8B80 /* NextMatchUpEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpEntry.swift; sourceTree = "<group>"; };
 		FF1D515C271E8670000A8B80 /* FotballGetWidgetEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotballGetWidgetEntryView.swift; sourceTree = "<group>"; };
-		FF1D515E271E86A0000A8B80 /* NextMatchUpWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpWidgetView.swift; sourceTree = "<group>"; };
+		FF1D515E271E86A0000A8B80 /* NextMatchUpDefaultWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpDefaultWidgetView.swift; sourceTree = "<group>"; };
 		FF1D5163271E8776000A8B80 /* NextMatchUpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextMatchUpRequest.swift; sourceTree = "<group>"; };
 		FF1D5164271E8776000A8B80 /* ClubListRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubListRequest.swift; sourceTree = "<group>"; };
 		FF1D5165271E8776000A8B80 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
@@ -160,6 +169,10 @@
 		FF948108271ECB6100712469 /* NetworkImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImage.swift; sourceTree = "<group>"; };
 		FFAA171C27213A3400526888 /* ImageDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDataRequest.swift; sourceTree = "<group>"; };
 		FFAA17282727C88800526888 /* ImageDownLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownLoader.swift; sourceTree = "<group>"; };
+		FFAB40C927290C9D0064E582 /* TeamColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamColorProvider.swift; sourceTree = "<group>"; };
+		FFAB40D027291C160064E582 /* NextMatchUpTwoColorWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpTwoColorWidgetView.swift; sourceTree = "<group>"; };
+		FFAB40D4272A29750064E582 /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
+		FFAB40DA272A2C680064E582 /* NextMatchUpMainColorWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpMainColorWidgetView.swift; sourceTree = "<group>"; };
 		FFC91258271E6DBD0078A44B /* FootballGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC9125B271E6DBD0078A44B /* FootballGetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGetApp.swift; sourceTree = "<group>"; };
 		FFC9125D271E6DBD0078A44B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -229,6 +242,7 @@
 		FF1D513F271E82A5000A8B80 /* FootballGetWidget */ = {
 			isa = PBXGroup;
 			children = (
+				FFAB40C827290C910064E582 /* Color */,
 				FF1D5140271E82A5000A8B80 /* FootballGetWidget.swift */,
 				FF9480FF271EBDFC00712469 /* Utils */,
 				FF1D5156271E8548000A8B80 /* Provider */,
@@ -272,7 +286,9 @@
 			isa = PBXGroup;
 			children = (
 				FF1D515C271E8670000A8B80 /* FotballGetWidgetEntryView.swift */,
-				FF1D515E271E86A0000A8B80 /* NextMatchUpWidgetView.swift */,
+				FF1D515E271E86A0000A8B80 /* NextMatchUpDefaultWidgetView.swift */,
+				FFAB40DA272A2C680064E582 /* NextMatchUpMainColorWidgetView.swift */,
+				FFAB40D027291C160064E582 /* NextMatchUpTwoColorWidgetView.swift */,
 				FF948108271ECB6100712469 /* NetworkImage.swift */,
 			);
 			path = View;
@@ -328,6 +344,15 @@
 				FF948100271EBE0900712469 /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		FFAB40C827290C910064E582 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				FFAB40C927290C9D0064E582 /* TeamColorProvider.swift */,
+				FFAB40D4272A29750064E582 /* Color Extension.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 		FFC9124F271E6DBD0078A44B = {
@@ -598,14 +623,19 @@
 				FF1D5175271E8776000A8B80 /* NetworkTask.swift in Sources */,
 				FF1D516D271E8776000A8B80 /* NextMatchUpRequest.swift in Sources */,
 				FF1D516F271E8776000A8B80 /* ClubListRequest.swift in Sources */,
+				FFAB40D3272929BE0064E582 /* NextMatchUpTwoColorWidgetView.swift in Sources */,
 				FF94810A271ECBC800712469 /* NetworkImage.swift in Sources */,
 				FF1D517D271E8814000A8B80 /* Params.swift in Sources */,
+				FFAB40CB2729171E0064E582 /* TeamColorProvider.swift in Sources */,
 				FF948102271EBF4800712469 /* Utils.swift in Sources */,
 				FF1D5177271E8776000A8B80 /* ClubListTask.swift in Sources */,
 				FF2C1309271FD84F0026A8DF /* ClubRankTask.swift in Sources */,
-				FF1D5160271E86CD000A8B80 /* NextMatchUpWidgetView.swift in Sources */,
+				FFAB40D6272A29750064E582 /* Color Extension.swift in Sources */,
+				FF1D5160271E86CD000A8B80 /* NextMatchUpDefaultWidgetView.swift in Sources */,
 				FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */,
 				FF1D5173271E8776000A8B80 /* NextMatchUpTask.swift in Sources */,
+				FFAB40D227291F580064E582 /* FotballGetWidgetEntryView.swift in Sources */,
+				FFAB40DC272A2C680064E582 /* NextMatchUpMainColorWidgetView.swift in Sources */,
 				FF1D5171271E8776000A8B80 /* NetworkRequest.swift in Sources */,
 				FFAA171E27213A3400526888 /* ImageDataRequest.swift in Sources */,
 				FFAA172A2727C88800526888 /* ImageDownLoader.swift in Sources */,
@@ -645,6 +675,7 @@
 				FFC9125E271E6DBD0078A44B /* ContentView.swift in Sources */,
 				FF1D5147271E82A8000A8B80 /* FootballGetWidget.intentdefinition in Sources */,
 				FFAA17292727C88800526888 /* ImageDownLoader.swift in Sources */,
+				FFAB40D5272A29750064E582 /* Color Extension.swift in Sources */,
 				FFAA171D27213A3400526888 /* ImageDataRequest.swift in Sources */,
 				FF1D515A271E85C2000A8B80 /* NextMatchUpEntry.swift in Sources */,
 				FF1D5158271E859F000A8B80 /* NextMatchUpProvider.swift in Sources */,
@@ -653,15 +684,18 @@
 				FF1D5172271E8776000A8B80 /* NextMatchUpTask.swift in Sources */,
 				FF1D5155271E8465000A8B80 /* Params.swift in Sources */,
 				FF1D5152271E83FB000A8B80 /* Models.swift in Sources */,
+				FFAB40DB272A2C680064E582 /* NextMatchUpMainColorWidgetView.swift in Sources */,
 				FF1D5174271E8776000A8B80 /* NetworkTask.swift in Sources */,
 				FF2C1304271FD7A30026A8DF /* ClubRankRequest.swift in Sources */,
 				FF948101271EBE0900712469 /* Utils.swift in Sources */,
 				FF1D5178271E8776000A8B80 /* NetworkService.swift in Sources */,
 				FF2C1308271FD84F0026A8DF /* ClubRankTask.swift in Sources */,
-				FF1D515F271E86A0000A8B80 /* NextMatchUpWidgetView.swift in Sources */,
+				FF1D515F271E86A0000A8B80 /* NextMatchUpDefaultWidgetView.swift in Sources */,
 				FF1D515D271E8670000A8B80 /* FotballGetWidgetEntryView.swift in Sources */,
+				FFAB40CA27290C9D0064E582 /* TeamColorProvider.swift in Sources */,
 				FF948109271ECB6100712469 /* NetworkImage.swift in Sources */,
 				FF1D5170271E8776000A8B80 /* NetworkRequest.swift in Sources */,
+				FFAB40D127291C160064E582 /* NextMatchUpTwoColorWidgetView.swift in Sources */,
 				FF1D5176271E8776000A8B80 /* ClubListTask.swift in Sources */,
 				FF1D516C271E8776000A8B80 /* NextMatchUpRequest.swift in Sources */,
 			);
