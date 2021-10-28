@@ -11,7 +11,7 @@ extension LeaguePram {
     var id: String {
         switch self {
         case .premierLeague: return "39"
-        case .ligue1: return "62"
+        case .ligue1: return "61"
         case .bundesliga: return "78"
         case .serieA: return "135"
         case .laliga: return "140"
