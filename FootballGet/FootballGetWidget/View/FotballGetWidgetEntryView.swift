@@ -23,9 +23,9 @@ struct FootballGetWidgetEntryView : View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color("WidgetBackground"))
         case .mainColor:
-            return AnyView(NextMatchUpDefaultWidgetView(entry: entry))
+            return AnyView(NextMatchUpMainColorWidgetView(entry: entry))
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(entry.teamColor)
+                .background(entry.mainColor)
         default:
             return AnyView(NextMatchUpDefaultWidgetView(entry: entry))
                 .frame(maxWidth: .infinity, maxHeight: .infinity)

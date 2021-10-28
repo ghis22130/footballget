@@ -105,7 +105,7 @@ final class TeamColorProvidor {
         "492": TeamColor(teamName: "Napoli", mainColor: "#003E81", secondColor: "#199FD6", teamNameColor: "#FFFFFF"),
         "494": TeamColor(teamName: "Udinese", mainColor: "#8B7D37", secondColor: "#7F7F7F", teamNameColor: "#FFFFFF"),
         "495": TeamColor(teamName: "Genoa", mainColor: "#06222E", secondColor: "#AF191C", teamNameColor: "#FECC13"),
-        "496": TeamColor(teamName: "Juventus", mainColor: "#000000", secondColor: "#FFFFFF", teamNameColor: "#FFFFFF"),
+        "496": TeamColor(teamName: "Juventus", mainColor: "#FFFFFF", secondColor: "#000000", teamNameColor: "#000000"),
         "497": TeamColor(teamName: "AS Roma", mainColor: "#970A2C", secondColor: "#FBBA00", teamNameColor: "#FBBA00"),
         "498": TeamColor(teamName: "Sampdoria", mainColor: "#0079BB", secondColor: "#DC351B", teamNameColor: "#FFFFFF"),
         "499": TeamColor(teamName: "Atalanta", mainColor: "#2D5CAE", secondColor: "#000000", teamNameColor: "#000000"),
