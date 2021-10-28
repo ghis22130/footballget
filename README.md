@@ -12,7 +12,7 @@
 
 ## Sample Snapshot & Video
 
-<img src = "https://user-images.githubusercontent.com/41679458/138036290-efe259ce-0bde-4b57-82d2-b588005c3807.png" width = "30%" align = "left"> <img src = "https://user-images.githubusercontent.com/41679458/138038912-7ad3c6d6-0105-4872-bdd8-58f6cbfd3064.gif" width = "30%" >
+<img src = "https://user-images.githubusercontent.com/41679458/139171059-39d672f7-4465-48df-86d1-6bf76c02a6c6.png" width = "30%" align = "left"> <img src = "https://user-images.githubusercontent.com/41679458/139172916-c0bfdbf4-ad4e-404c-b12f-eb9d3f97d2de.gif" width = "30%" >
 
 
 ETC
