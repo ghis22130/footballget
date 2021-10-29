@@ -22,8 +22,9 @@ struct FootballGetWidget: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: NextMatchUpProvider()) { entry in
             FootballGetWidgetEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Next Match Up")
+        .description("Select the team you want to subscribe to.")
+        .supportedFamilies([.systemSmall])
         
     }
 }
