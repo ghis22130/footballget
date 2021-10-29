@@ -24,7 +24,7 @@ extension Color {
     }
     
     public static var background: Color {
-        Color("Widgetbackground")
+        Color("WidgetBackground")
     }
 
 }

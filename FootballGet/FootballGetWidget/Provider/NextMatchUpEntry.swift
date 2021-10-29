@@ -18,14 +18,16 @@ struct NextMatchUpEntry: TimelineEntry {
     let gameDate: Date
     let teamColor: TeamColor?
     let style: StylePram
+    let isSetUp: Bool
 }
 
 // MARK: - init
 extension NextMatchUpEntry {
-    init(selected identifier: String, rank: Int, fixture: Fixture, clubs: Clubs, league: League, homeLogo: UIImage, awayLogo: UIImage, style: StylePram) {
+    init(selected identifier: String,rank: Int, fixture: Fixture, clubs: Clubs, league: League, homeLogo: UIImage, awayLogo: UIImage, style: StylePram, isSetUp: Bool = true) {
         let (selected, opposite) = NextMatchUpEntry.division(selected: identifier, clubs: clubs, homeLogo: homeLogo, awayLogo: awayLogo)
         
         self.date = Date()
+        self.isSetUp = isSetUp
         self.selectedClubName = selected.0.name
         self.selectedClubrank = "\(rank)"
         self.selectedClubLogo = selected.1
@@ -48,8 +50,10 @@ extension NextMatchUpEntry {
 
 // MARK: - Mock
 extension NextMatchUpEntry {
-    static let snapshot = NextMatchUpEntry(date: Date(), selectedClubName: "Manchester United", selectedClubrank: "1", selectedClubLogo: NextMatchUpEntry.muLogo, oppositeClubName: "Chelsea", oppositeClubLogo: NextMatchUpEntry.chelseaLogo, gameDate: Date(), teamColor: TeamColorProvidor.teamColor(id: "33"), style: .defaultColor)
+    static let snapshot = NextMatchUpEntry(date: Date(), selectedClubName: "Manchester United", selectedClubrank: "1", selectedClubLogo: NextMatchUpEntry.muLogo, oppositeClubName: "Chelsea", oppositeClubLogo: NextMatchUpEntry.chelseaLogo, gameDate: Date(), teamColor: TeamColorProvidor.teamColor(id: "33"), style: .defaultColor, isSetUp: true)
     
-    static let muLogo = UIImage(named: "https://media.api-sports.io/football/teams/33.png") ?? UIImage()
-    static let chelseaLogo = UIImage(named: "https://media.api-sports.io/football/teams/49.png") ?? UIImage()
+    static let initial = NextMatchUpEntry(date: Date(), selectedClubName: "", selectedClubrank: "", selectedClubLogo: UIImage(), oppositeClubName: "", oppositeClubLogo: UIImage(), gameDate: Date(), teamColor: nil, style: .unknown, isSetUp: false)
+    
+    static let muLogo = UIImage(named: "ManchesterUnitedLogo") ?? UIImage()
+    static let chelseaLogo = UIImage(named: "ChelseaLogo") ?? UIImage()
 }

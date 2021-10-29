@@ -91,6 +91,10 @@
 		FFC9126D271E6DC20078A44B /* FootballGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC9126C271E6DC20078A44B /* FootballGetTests.swift */; };
 		FFC91277271E6DC20078A44B /* FootballGetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC91276271E6DC20078A44B /* FootballGetUITests.swift */; };
 		FFC91279271E6DC20078A44B /* FootballGetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC91278271E6DC20078A44B /* FootballGetUITestsLaunchTests.swift */; };
+		FFD77F5E272B781C00396615 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFD77F60272B781C00396615 /* Localizable.strings */; };
+		FFD77F64272B78A000396615 /* String Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD77F63272B78A000396615 /* String Extension.swift */; };
+		FFD77F67272B7EE700396615 /* NextMatchUpSetUpWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD77F65272B7E5D00396615 /* NextMatchUpSetUpWidgetView.swift */; };
+		FFD77F68272B7EEE00396615 /* NextMatchUpSetUpWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD77F65272B7E5D00396615 /* NextMatchUpSetUpWidgetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -189,6 +193,10 @@
 		FFC91272271E6DC20078A44B /* FootballGetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootballGetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFC91276271E6DC20078A44B /* FootballGetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGetUITests.swift; sourceTree = "<group>"; };
 		FFC91278271E6DC20078A44B /* FootballGetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballGetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFD77F5F272B781C00396615 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFD77F61272B783300396615 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFD77F63272B78A000396615 /* String Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String Extension.swift"; sourceTree = "<group>"; };
+		FFD77F65272B7E5D00396615 /* NextMatchUpSetUpWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMatchUpSetUpWidgetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				FF1D515C271E8670000A8B80 /* FotballGetWidgetEntryView.swift */,
+				FFD77F65272B7E5D00396615 /* NextMatchUpSetUpWidgetView.swift */,
 				FF1D515E271E86A0000A8B80 /* NextMatchUpDefaultWidgetView.swift */,
 				FFAB40DA272A2C680064E582 /* NextMatchUpMainColorWidgetView.swift */,
 				FFAB40D027291C160064E582 /* NextMatchUpTwoColorWidgetView.swift */,
@@ -367,6 +376,7 @@
 				FFC9125D271E6DBD0078A44B /* MainView.swift */,
 				FFAB40DE272A3DBB0064E582 /* TutorialStepView.swift */,
 				FFAB40E1272A446E0064E582 /* TutorialStepViewModel.swift */,
+				FFAB40E3272A65680064E582 /* Step.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -374,6 +384,7 @@
 		FFC9124F271E6DBD0078A44B = {
 			isa = PBXGroup;
 			children = (
+				FFD77F62272B789400396615 /* Utils */,
 				FFC9125A271E6DBD0078A44B /* FootballGet */,
 				FFC9126B271E6DC20078A44B /* FootballGetTests */,
 				FFC91275271E6DC20078A44B /* FootballGetUITests */,
@@ -404,7 +415,7 @@
 				FFAB40DD272A3DA60064E582 /* Main */,
 				FFC9125F271E6DC10078A44B /* Assets.xcassets */,
 				FFC91261271E6DC10078A44B /* Preview Content */,
-				FFAB40E3272A65680064E582 /* Step.swift */,
+				FFD77F60272B781C00396615 /* Localizable.strings */,
 			);
 			path = FootballGet;
 			sourceTree = "<group>";
@@ -432,6 +443,14 @@
 				FFC91278271E6DC20078A44B /* FootballGetUITestsLaunchTests.swift */,
 			);
 			path = FootballGetUITests;
+			sourceTree = "<group>";
+		};
+		FFD77F62272B789400396615 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FFD77F63272B78A000396615 /* String Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -569,6 +588,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = FFC9124F271E6DBD0078A44B;
 			packageReferences = (
@@ -608,6 +628,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFC91263271E6DC10078A44B /* Preview Assets.xcassets in Resources */,
+				FFD77F5E272B781C00396615 /* Localizable.strings in Resources */,
 				FFC91260271E6DC10078A44B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,6 +672,7 @@
 				FF1D5160271E86CD000A8B80 /* NextMatchUpDefaultWidgetView.swift in Sources */,
 				FFAE067B271E9F6E0057C03C /* NextMatchUpEntry.swift in Sources */,
 				FF1D5173271E8776000A8B80 /* NextMatchUpTask.swift in Sources */,
+				FFD77F67272B7EE700396615 /* NextMatchUpSetUpWidgetView.swift in Sources */,
 				FFAB40D227291F580064E582 /* FotballGetWidgetEntryView.swift in Sources */,
 				FFAB40DC272A2C680064E582 /* NextMatchUpMainColorWidgetView.swift in Sources */,
 				FF1D5171271E8776000A8B80 /* NetworkRequest.swift in Sources */,
@@ -702,6 +724,7 @@
 				FF1D5172271E8776000A8B80 /* NextMatchUpTask.swift in Sources */,
 				FF1D5155271E8465000A8B80 /* Params.swift in Sources */,
 				FF1D5152271E83FB000A8B80 /* Models.swift in Sources */,
+				FFD77F64272B78A000396615 /* String Extension.swift in Sources */,
 				FFAB40DB272A2C680064E582 /* NextMatchUpMainColorWidgetView.swift in Sources */,
 				FF1D5174271E8776000A8B80 /* NetworkTask.swift in Sources */,
 				FF2C1304271FD7A30026A8DF /* ClubRankRequest.swift in Sources */,
@@ -711,6 +734,7 @@
 				FFAB40E2272A446E0064E582 /* TutorialStepViewModel.swift in Sources */,
 				FF2C1308271FD84F0026A8DF /* ClubRankTask.swift in Sources */,
 				FF1D515F271E86A0000A8B80 /* NextMatchUpDefaultWidgetView.swift in Sources */,
+				FFD77F68272B7EEE00396615 /* NextMatchUpSetUpWidgetView.swift in Sources */,
 				FF1D515D271E8670000A8B80 /* FotballGetWidgetEntryView.swift in Sources */,
 				FFAB40CA27290C9D0064E582 /* TeamColorProvider.swift in Sources */,
 				FF948109271ECB6100712469 /* NetworkImage.swift in Sources */,
@@ -762,6 +786,18 @@
 			targetProxy = FFC91273271E6DC20078A44B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FFD77F60272B781C00396615 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFD77F5F272B781C00396615 /* en */,
+				FFD77F61272B783300396615 /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FF1D514C271E82A8000A8B80 /* Debug */ = {
@@ -874,6 +910,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -935,6 +972,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

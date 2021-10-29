@@ -30,7 +30,6 @@ final class DefaultNetworkService: NetworkService {
                 .dataMapError()
                 .eraseToAnyPublisher()
         } catch let error {
-            print(error)
             return Fail(error: error).eraseToAnyPublisher()
         }
     }

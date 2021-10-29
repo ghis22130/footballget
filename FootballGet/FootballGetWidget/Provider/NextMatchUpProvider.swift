@@ -19,7 +19,7 @@ final class NextMatchUpProvider: IntentTimelineProvider {
     var cancelBag = Set<AnyCancellable>()
     
     func placeholder(in context: Context) -> NextMatchUpEntry {
-        .snapshot
+        return .initial
     }
     
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (NextMatchUpEntry) -> Void) {
@@ -36,7 +36,7 @@ final class NextMatchUpProvider: IntentTimelineProvider {
                 completion(timeLine)
             case .failure(_):
                 let refreshDate = Calendar.current.date(byAdding: .hour, value: 1, to: Date()) ?? Date() // if Data Load is fail, RefreshDate is 1 hour
-                let timeLine = Timeline(entries: [NextMatchUpEntry.snapshot], policy: .after(refreshDate))
+                let timeLine = Timeline(entries: [NextMatchUpEntry.initial], policy: .after(refreshDate))
                 completion(timeLine)
             }
         }
@@ -86,7 +86,7 @@ final class NextMatchUpProvider: IntentTimelineProvider {
                         case .finished: return
                         }
                     }, receiveValue: { home, away  in
-                        let entry = NextMatchUpEntry(selected: clubID, rank: rank, fixture: fixture, clubs: clubs, league: league, homeLogo: home, awayLogo: away, style: style)
+                        let entry = NextMatchUpEntry(selected: clubID ,rank: rank, fixture: fixture, clubs: clubs, league: league, homeLogo: home, awayLogo: away, style: style)
                             completion(.success(entry))
                         }).store(in: &self.cancelBag)
             }.store(in: &cancelBag)

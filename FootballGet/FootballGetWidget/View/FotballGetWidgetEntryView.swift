@@ -12,16 +12,15 @@ struct FootballGetWidgetEntryView : View {
     var entry: NextMatchUpProvider.Entry
     
     var body: some View {
-        
         switch entry.style {
         case .defaultColor:
             return AnyView(NextMatchUpDefaultWidgetView(entry: entry))
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color("WidgetBackground"))
+                .background(Color.background)
         case .twoColor:
             return AnyView(NextMatchUpTwoColorWidgetView(entry: entry))
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color("WidgetBackground"))
+                .background(Color.background)
         case .mainColor:
             return AnyView(NextMatchUpMainColorWidgetView(entry: entry))
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -29,6 +28,7 @@ struct FootballGetWidgetEntryView : View {
         default:
             return AnyView(NextMatchUpDefaultWidgetView(entry: entry))
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color("WidgetBackground"))        }
+                .background(Color.background)
+        }
     }
 }

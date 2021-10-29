@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  FootballGet
+
+  Created by 지북 on 2021/10/29.
+  
+*/
+
+
+//MARK: - Steps
+
+// Step01
+"Touch any app or empty screen on the home screen for about 1 to 2 seconds until the screen shakes. If the screen shakes, click the + button on the upper left on the cell phone." = "Touch any app or empty screen on the home screen for about 1 to 2 seconds until the screen shakes. If the screen shakes, click the + button on the upper left on the cell phone.";
+
+// Step02
+"Enter Football Get in the widget search. After that, select Football Get. When you see a widget displayed as Next Match Up, tap Add Widget at the bottom of the screen." = "Enter Football Get in the widget search. After that, select Football Get. When you see a widget displayed as Next Match Up, tap Add Widget at the bottom of the screen.";
+
+// Step03
+"When a widget is created on the home screen, touch the widget for about 1 to 2 seconds. At this time, you can press any app or screen to press this widget even when the app is shaking. Then, tap Edit Widget." = "When a widget is created on the home screen, touch the widget for about 1 to 2 seconds. At this time, you can press any app or screen to press this widget even when the app is shaking. Then, tap Edit Widget.";
+
+// Step04
+"You need to complete the setting of three items.\nFirst, set up the league. Currently, only five leagues are provided in the League.\nIf you select a League, you can select clubs that belong to it.\nFinally, this is Style where you can choose the design of the widget. Currently, three styles are provided: default, two color, and main color. Please choose a style that you like." = "You need to complete the setting of three items.\nFirst, set up the league. Currently, only five leagues are provided in the League.\nIf you select a League, you can select clubs that belong to it.\nFinally, this is Style where you can choose the design of the widget. Currently, three styles are provided: default, two color, and main color. Please choose a style that you like.";
+
+// Step05
+"All the settings have been completed. From now on, you can see the next game information of the team you want through the widget. Decorate your own widget with various teams and styles." = "All the settings have been completed. From now on, you can see the next game information of the team you want through the widget. Decorate your own widget with various teams and styles.";

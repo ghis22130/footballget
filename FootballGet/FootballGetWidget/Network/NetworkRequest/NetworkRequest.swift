@@ -34,7 +34,7 @@ extension NetworkRequest {
     
     var headers: [String: String]? {
         return ["x-rapidapi-host": "api-football-v1.p.rapidapi.com",
-                "x-rapidapi-key": "29cf0d4388msh14415588f131838p1baf4ejsnb8758a7dec62"]
+                "x-rapidapi-key": ""]
     }
     
     var url: URL? {

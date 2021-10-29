@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  FootballGet
+
+  Created by 지북 on 2021/10/29.
+  
+*/
+
+//MARK: - Steps
+
+// Step01
+"Touch any app or empty screen on the home screen for about 1 to 2 seconds until the screen shakes. If the screen shakes, click the + button on the upper left on the cell phone." = "홈 화면에서 아무 앱 또는 빈 화면을 화면이 흔들릴 때 까지 약 1~2초간 길게 터치해줍니다. 화면이 흔들리면 핸드폰에서 좌측 상단의 + 버튼을 클릭해줍니다.";
+
+// Step02
+"Enter Football Get in the widget search. After that, select Football Get. When you see a widget displayed as Next Match Up, tap Add Widget at the bottom of the screen." = "위젯 검색에서 Football Get을 입력해줍니다. 그 후 Football Get을 선택해줍니다. Next Match Up으로 표시되는 위젯이 보여지게 되면 화면 하단에 보이는 위젯 추가를 눌러줍니다.";
+
+// Step03
+"When a widget is created on the home screen, touch the widget for about 1 to 2 seconds. At this time, you can press any app or screen to press this widget even when the app is shaking. Then, tap Edit Widget." = "홈 화면에 위젯이 생성되면 위젯을 약 1~2초간 길게 터치해줍니다. 이때 아무 앱이나 화면을 꾹 눌러서 앱이 흔들리는 상태가 된 상태에서도 본 위젯을 눌러도 됩니다. 그런 다음 위젯 편집을 눌러 줍니다.";
+
+// Step04
+"You need to complete the setting of three items.\nFirst, set up the league. Currently, only five leagues are provided in the League.\nIf you select a League, you can select clubs that belong to it.\nFinally, this is Style where you can choose the design of the widget. Currently, three styles are provided: default, two color, and main color. Please choose a style that you like." = "3가지의 항목을 설정을 완료해 주어야합니다.\n먼저 League부터 설정해줍니다. 현재 League는 5가지의 리그만 제공되고 있습니다.\nLeague를 선택하게되면 해당 League에 속해있는 Club들을 선택하실 수 있습니다.\n마지막으로 위젯의 디자인을 선택할 수 있는 Style입니다. 현재 default, two color, main color 3가지의 스타일이 제공되고 있습니다. 마음에 드는 스타일을 선택해주세요.";
+
+// Step05
+"All the settings have been completed. From now on, you can see the next game information of the team you want through the widget. Decorate your own widget with various teams and styles." = "모든 셋팅이 완료되었습니다. 이제부터 원하는 팀의 다음 경기 정보를 위젯을 통해 볼 수 있습니다. 다양한 팀과 다양한 스타일로 나만의 위젯을 꾸며보세요.";

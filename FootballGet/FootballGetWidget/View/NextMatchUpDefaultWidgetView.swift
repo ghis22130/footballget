@@ -16,58 +16,62 @@ struct NextMatchUpDefaultWidgetView: View {
     }
     
     var body: some View {
-        VStack {
-            HStack {
+        if !entry.isSetUp {
+            NextMatchUpSetUpWidgetView()
+        } else {
+            VStack {
+                HStack {
+                    
+                    VStack(alignment: .leading) {
+                        Text(entry.selectedClubName)
+                            .font(.system(size: 12))
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                        
+                        HStack {
+                            Text("Rank")
+                                .font(.system(size: 10))
+                                .foregroundColor(.white)
+                            
+                            Text(entry.selectedClubrank)
+                                .font(.system(size: 10))
+                                .foregroundColor(.white)
+                                .padding(.leading, -5)
+                        }
+                    }.padding(.leading, 15)
+                    
+                    Spacer()
+                    
+                    Image(uiImage: entry.selectedClubLogo)
+                        .resizable()
+                        .frame(width: 25, height: 25, alignment: .center)
+                        .padding(.trailing, 10)
+                    
+                }
                 
-                VStack(alignment: .leading) {
-                    Text(entry.selectedClubName)
+                Image(uiImage: entry.oppositeClubLogo)
+                    .resizable()
+                    .frame(width: 75, height: 75, alignment: .center)
+                    .padding(.top, -5)
+                
+                HStack {
+                    Text("vs")
+                        .font(.system(size: 12))
+                        .foregroundColor(.white)
+                    
+                    Text(entry.oppositeClubName)
                         .font(.system(size: 12))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
-                    
-                    HStack {
-                        Text("Rank")
-                            .font(.system(size: 10))
-                            .foregroundColor(.white)
-                        
-                        Text(entry.selectedClubrank)
-                            .font(.system(size: 10))
-                            .foregroundColor(.white)
-                            .padding(.leading, -5)
-                    }
-                }.padding(.leading, 15)
+                        .lineLimit(1)
+                        .padding(.leading, -3)
+                }.padding(.top, -5)
                 
-                Spacer()
-                
-                Image(uiImage: entry.selectedClubLogo)
-                    .resizable()
-                    .frame(width: 25, height: 25, alignment: .center)
-                    .padding(.trailing, 10)
-                
-            }
-            
-            Image(uiImage: entry.oppositeClubLogo)
-                .resizable()
-                .frame(width: 75, height: 75, alignment: .center)
-                .padding(.top, -5)
-            
-            HStack {
-                Text("vs")
-                    .font(.system(size: 12))
-                    .foregroundColor(.white)
-
-                Text(entry.oppositeClubName)
-                    .font(.system(size: 12))
+                Text(entry.gameDate.toString())
+                    .font(.system(size: 10))
                     .fontWeight(.bold)
                     .foregroundColor(.white)
-                    .lineLimit(1)
-                    .padding(.leading, -3)
-            }.padding(.top, -5)
-            
-            Text(entry.gameDate.toString())
-                .font(.system(size: 10))
-                .fontWeight(.bold)
-                .foregroundColor(.white)
+            }
         }
     }
 }
