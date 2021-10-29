@@ -128,5 +128,5 @@ iOSInjectionProject/
 !*.xcworkspace/contents.xcworkspacedata
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-NetworkRequest.swift
+**/NetworkRequest.swift
 
